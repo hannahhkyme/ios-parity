@@ -1,5 +1,6 @@
 import GenerateForm from "@/components/GenerateForm";
 import { listCustomers } from "@/lib/data";
+import { generationSupport } from "@/lib/generation";
 
 export const dynamic = "force-dynamic";
 
@@ -11,7 +12,7 @@ export default function Home() {
         <h1>Customer apps, proven identical on iOS and Android</h1>
         <p>Paste a company and Parity Studio generates a native SwiftUI app and a Jetpack Compose twin from one spec, drives both with the same test contract, records the walkthrough and proves parity component by component.</p>
       </section>
-      <GenerateForm />
+      <GenerateForm support={generationSupport()} />
       <h2 className="section-title">Customers</h2>
       <div className="grid" data-testid="customer-list">
         {customers.length === 0 && <p className="muted">No customers yet. Generate one above or run <code>npm run parity -- run "Company"</code>.</p>}

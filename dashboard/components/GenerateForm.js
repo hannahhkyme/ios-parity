@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 
 const STEPS = [["generated", "Spec + native apps generated"], ["ios", "iOS build, XCUITest + recording"], ["android", "Android build, Compose tests + frames"], ["hasReport", "Parity report"]];
 
-export default function GenerateForm() {
+export default function GenerateForm({ support = { available: true } }) {
   const [company, setCompany] = useState("");
   const [slug, setSlug] = useState(null);
   const [status, setStatus] = useState(null);
@@ -40,9 +40,10 @@ export default function GenerateForm() {
     <form className="generate" onSubmit={submit}>
       <label htmlFor="company">New customer</label>
       <div className="generate-row">
-        <input id="company" data-testid="company-input" value={company} onChange={(e) => setCompany(e.target.value)} placeholder="Paste a company name or website, e.g. evinova.com" />
-        <button type="submit" disabled={!company.trim() || (slug && !status?.hasReport)}>Generate apps</button>
+        <input id="company" disabled={!support.available} data-testid="company-input" value={company} onChange={(e) => setCompany(e.target.value)} placeholder="Paste a company name or website, e.g. evinova.com" />
+        <button type="submit" disabled={!support.available || !company.trim() || (slug && !status?.hasReport)}>Generate apps</button>
       </div>
+      {!support.available && <p className="notice" data-testid="generate-unavailable">{support.reason}</p>}
       <p className="hint">Runs <code>parity run</code> on this Mac: writes the spec, generates SwiftUI + Compose apps, runs both test suites, records the walkthrough and builds the parity page.</p>
       {error && <p className="error">{error}</p>}
       {slug && (

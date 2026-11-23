@@ -29,7 +29,7 @@ npm run parity -- run "https://evinova.com"   # or any company name / URL
 npm run dashboard               # http://localhost:3100
 ```
 
-Or paste the company into **New customer** on the dashboard home page; it runs the same pipeline on the machine serving the dashboard and links to the new parity page when done.
+Or paste the company into **New customer** on the dashboard home page; it runs the same pipeline on the machine serving the dashboard and links to the new parity page when done. Generation needs macOS with Xcode: when the dashboard is served from Linux (e.g. the hosted Devin App, started with `npm install && npm run dashboard:build && npm --prefix dashboard start`), the form is disabled and says so, and new customers are generated on a Mac and pushed to `customers/`.
 
 ### Individual steps
 
