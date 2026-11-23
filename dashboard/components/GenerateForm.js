@@ -44,7 +44,7 @@ export default function GenerateForm({ support = { available: true } }) {
         <button type="submit" disabled={!support.available || !company.trim() || (slug && !status?.hasReport)}>Generate apps</button>
       </div>
       {!support.available && <p className="notice" data-testid="generate-unavailable">{support.reason}</p>}
-      <p className="hint">Runs <code>parity run</code> on this Mac: writes the spec, generates SwiftUI + Compose apps, runs both test suites, records the walkthrough and builds the parity page.</p>
+      <p className="hint">Runs <code>parity run</code> {support.available ? "on this Mac" : "on a Mac"}: writes the spec, generates SwiftUI + Compose apps, runs both test suites, records the walkthrough and builds the parity page.</p>
       {error && <p className="error">{error}</p>}
       {slug && (
         <div className="progress" data-testid="generate-progress">
