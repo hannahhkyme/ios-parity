@@ -6,7 +6,8 @@ const TYPES = { ".png": "image/png", ".mp4": "video/mp4", ".json": "application/
 
 export async function GET(request, { params }) {
   const { slug, path: parts } = await params;
-  const base = path.join(CUSTOMERS, slug, "evidence");
+  const topLevel = parts.length === 1 && ["spec.json", "parity.json"].includes(parts[0]);
+  const base = topLevel ? path.join(CUSTOMERS, slug) : path.join(CUSTOMERS, slug, "evidence");
   const file = path.resolve(base, ...parts);
   if (!file.startsWith(base + path.sep) || !fs.existsSync(file)) return new Response("not found", { status: 404 });
   const stat = fs.statSync(file);

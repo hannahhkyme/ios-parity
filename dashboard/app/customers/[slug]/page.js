@@ -68,7 +68,7 @@ export default async function CustomerPage({ params }) {
 
           <h2 className="section-title">How parity is proven</h2>
           <ol className="method">
-            <li><strong>One spec.</strong> <code>customers/{slug}/spec.json</code> defines {report.components.length} components with stable ids, {report.screens.length} screens and {report.flows.length} flows. Both apps are generated from it.</li>
+            <li><strong>One spec.</strong> <a href={evidenceUrl(slug, "spec.json")}><code>customers/{slug}/spec.json</code></a> defines {report.components.length} components with stable ids, {report.screens.length} screens and {report.flows.length} flows. Both apps are generated from it.</li>
             <li><strong>Same ids on both platforms.</strong> Every component carries its id as the iOS <code>accessibilityIdentifier</code> and the Compose <code>testTag</code>, and its label as the accessibility label / <code>contentDescription</code>.</li>
             <li><strong>Same test contract.</strong> XCUITest and the Compose UI test both read the spec, open each screen, and record presence, label, role, value and size for every component, then run every flow step by step.</li>
             <li><strong>Compared here.</strong> Presence, label and role must match exactly (and match the spec); size may differ by up to 12% of the screen; toggles and chips must report the same state.</li>
@@ -133,7 +133,7 @@ export default async function CustomerPage({ params }) {
               </details>
             ))}
           </div>
-          <p className="muted small">Report generated {new Date(report.generatedAt).toLocaleString("en-US")}. Raw evidence: <a href={evidenceUrl(slug, "ios/components.json")}>iOS components.json</a> · <a href={evidenceUrl(slug, "android/components.json")}>Android components.json</a> · <a href={evidenceUrl(slug, "ios/flows.json")}>iOS flows.json</a> · <a href={evidenceUrl(slug, "android/flows.json")}>Android flows.json</a></p>
+          <p className="muted small">Report generated {new Date(report.generatedAt).toLocaleString("en-US")}. Raw evidence: <a href={evidenceUrl(slug, "spec.json")}>spec.json</a> · <a href={evidenceUrl(slug, "parity.json")}>parity.json</a> · <a href={evidenceUrl(slug, "ios/components.json")}>iOS components.json</a> · <a href={evidenceUrl(slug, "android/components.json")}>Android components.json</a> · <a href={evidenceUrl(slug, "ios/flows.json")}>iOS flows.json</a> · <a href={evidenceUrl(slug, "android/flows.json")}>Android flows.json</a></p>
         </>
       )}
     </article>
