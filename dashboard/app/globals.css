@@ -77,3 +77,5 @@ td.crop img { max-width: 170px; max-height: 70px; object-fit: contain; border: 1
 .flow summary { cursor: pointer; display: flex; gap: 10px; align-items: center; }
 .flow table { margin-top: 10px; }
 @media (max-width: 900px) { .devices, .stats { grid-template-columns: 1fr 1fr; } }
+.notice { background: #fdf3e1; color: #7a4f10; border: 1px solid #f3dfb8; border-radius: 10px; padding: 10px 12px; font-size: 14px; margin: 12px 0 0; line-height: 1.45; }
+input:disabled { background: var(--bg); }
