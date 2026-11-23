@@ -1,0 +1,198 @@
+{
+  "device": {
+    "platform": "android",
+    "device": "Robolectric virtual device (402×874 dp, xxhdpi)",
+    "os": "Android 14 (API 34)",
+    "runner": "Robolectric + Compose UI Test",
+    "width": 402,
+    "height": 874,
+    "unit": "dp"
+  },
+  "flows": {
+    "hero-cta": {
+      "passed": true,
+      "steps": [
+        {
+          "action": "tap",
+          "target": "home.hero.cta",
+          "ok": true,
+          "detail": "tapped home.hero.cta"
+        },
+        {
+          "action": "expectExists",
+          "target": "browse.search",
+          "ok": true,
+          "detail": "browse.search shown"
+        }
+      ]
+    },
+    "open-detail": {
+      "passed": true,
+      "steps": [
+        {
+          "action": "tap",
+          "target": "tab.browse",
+          "ok": true,
+          "detail": "tapped tab.browse"
+        },
+        {
+          "action": "tap",
+          "target": "browse.row.0",
+          "ok": true,
+          "detail": "tapped browse.row.0"
+        },
+        {
+          "action": "expectLabel",
+          "target": "detail.header",
+          "ok": true,
+          "detail": "label \"Data Annotation\" (expected \"Data Annotation\")"
+        }
+      ]
+    },
+    "select-option": {
+      "passed": true,
+      "steps": [
+        {
+          "action": "tap",
+          "target": "tab.browse",
+          "ok": true,
+          "detail": "tapped tab.browse"
+        },
+        {
+          "action": "tap",
+          "target": "browse.row.0",
+          "ok": true,
+          "detail": "tapped browse.row.0"
+        },
+        {
+          "action": "tap",
+          "target": "detail.option.1",
+          "ok": true,
+          "detail": "tapped detail.option.1"
+        },
+        {
+          "action": "expectValue",
+          "target": "detail.option.1",
+          "ok": true,
+          "detail": "value \"selected\" (expected \"selected\")"
+        },
+        {
+          "action": "expectValue",
+          "target": "detail.option.0",
+          "ok": true,
+          "detail": "value \"unselected\" (expected \"unselected\")"
+        }
+      ]
+    },
+    "primary-action": {
+      "passed": true,
+      "steps": [
+        {
+          "action": "tap",
+          "target": "tab.browse",
+          "ok": true,
+          "detail": "tapped tab.browse"
+        },
+        {
+          "action": "tap",
+          "target": "browse.row.0",
+          "ok": true,
+          "detail": "tapped browse.row.0"
+        },
+        {
+          "action": "tap",
+          "target": "detail.primary",
+          "ok": true,
+          "detail": "tapped detail.primary"
+        },
+        {
+          "action": "expectLabel",
+          "target": "detail.confirmation",
+          "ok": true,
+          "detail": "label \"Interest saved\" (expected \"Interest saved\")"
+        }
+      ]
+    },
+    "search-filter": {
+      "passed": true,
+      "steps": [
+        {
+          "action": "tap",
+          "target": "tab.browse",
+          "ok": true,
+          "detail": "tapped tab.browse"
+        },
+        {
+          "action": "type",
+          "target": "browse.search",
+          "ok": true,
+          "detail": "typed \"Synodex\""
+        },
+        {
+          "action": "expectExists",
+          "target": "browse.row.2",
+          "ok": true,
+          "detail": "browse.row.2 shown"
+        },
+        {
+          "action": "expectMissing",
+          "target": "browse.row.0",
+          "ok": true,
+          "detail": "browse.row.0 hidden"
+        }
+      ]
+    },
+    "toggle": {
+      "passed": true,
+      "steps": [
+        {
+          "action": "tap",
+          "target": "tab.account",
+          "ok": true,
+          "detail": "tapped tab.account"
+        },
+        {
+          "action": "tap",
+          "target": "account.toggle",
+          "ok": true,
+          "detail": "tapped account.toggle"
+        },
+        {
+          "action": "expectValue",
+          "target": "account.toggle",
+          "ok": true,
+          "detail": "value \"on\" (expected \"on\")"
+        }
+      ]
+    },
+    "tab-nav": {
+      "passed": true,
+      "steps": [
+        {
+          "action": "tap",
+          "target": "tab.account",
+          "ok": true,
+          "detail": "tapped tab.account"
+        },
+        {
+          "action": "expectExists",
+          "target": "account.profile",
+          "ok": true,
+          "detail": "account.profile shown"
+        },
+        {
+          "action": "tap",
+          "target": "tab.home",
+          "ok": true,
+          "detail": "tapped tab.home"
+        },
+        {
+          "action": "expectExists",
+          "target": "home.hero",
+          "ok": true,
+          "detail": "home.hero shown"
+        }
+      ]
+    }
+  }
+}

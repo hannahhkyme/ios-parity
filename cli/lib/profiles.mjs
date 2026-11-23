@@ -284,6 +284,54 @@ export const PRESETS = {
     tagline: "Clinical trials, designed around the participant",
     brand: { primary: "#3B0030", accent: "#ED4A73", highlight: "#FFCD00", surface: "#EFE3E9", onPrimary: "#FFFFFF" },
   },
+  innodata: {
+    displayName: "Innodata",
+    industry: "generic",
+    tagline: "Data and human expertise for building AI",
+    brand: { primary: "#0170B9", accent: "#03588F", highlight: "#B5E5FF", surface: "#EAF4FA", onPrimary: "#FFFFFF" },
+    content: {
+      tabs: [
+        { id: "home", title: "Home", icon: "home" },
+        { id: "browse", title: "Solutions", icon: "list" },
+        { id: "account", title: "Account", icon: "person" },
+      ],
+      greeting: "Welcome to Innodata",
+      hero: {
+        eyebrow: "AI DATA SOLUTIONS",
+        title: "Build AI with better data",
+        subtitle: "Explore training data, annotation and model evaluation services.",
+        cta: "Explore solutions",
+      },
+      stats: [
+        { label: "Data services", value: "2", icon: "list" },
+        { label: "Platforms", value: "2", icon: "star" },
+      ],
+      sectionTitle: "AI data services",
+      searchPlaceholder: "Search solutions",
+      items: [
+        { title: "Data Annotation", subtitle: "Label training datasets", value: "Labeling", badge: "AI Data", icon: "check" },
+        { title: "Model Evaluation", subtitle: "Human feedback", value: "Evaluation", badge: "GenAI", icon: "star" },
+        { title: "Synodex", subtitle: "Turn medical records into structured data", value: "Platform", badge: "Insurance", icon: "heart" },
+        { title: "Agility PR", subtitle: "Monitor media coverage and reach journalists", value: "Platform", badge: "Media", icon: "mail" },
+      ],
+      detail: {
+        optionsTitle: "Choose a data type",
+        options: ["Text", "Images", "Audio"],
+        primaryAction: "Save interest",
+        confirmation: "Interest saved",
+      },
+      account: {
+        name: "Demo account",
+        subtitle: "Innodata solutions explorer",
+        rows: [
+          { title: "Preferences", icon: "settings" },
+          { title: "Privacy", icon: "lock" },
+          { title: "Help & support", icon: "phone" },
+        ],
+        toggle: "Solution updates",
+      },
+    },
+  },
   gap: {
     displayName: "Gap",
     industry: "retail",

@@ -1,7 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { parseCompanyInput, buildSpec, slugify, pascal } from "../cli/lib/spec.mjs";
-import { guessIndustry } from "../cli/lib/profiles.mjs";
+import { guessIndustry, PROFILES } from "../cli/lib/profiles.mjs";
 
 test("parses a pasted URL with tracking params down to the company", () => {
   const r = parseCompanyInput("https://evinova.com/?utm_source=google&gclid=abc");
@@ -38,4 +38,14 @@ test("unknown companies still get a full spec with derived branding", () => {
   assert.match(spec.brand.primary, /^#[0-9A-F]{6}$/i);
   assert.equal(spec.ios.bundleId, "com.paritystudio.zentrixlogistics");
   assert.ok(spec.components.length > 20);
+});
+
+test("Innodata gets branded solution content without overriding an explicit industry", () => {
+  const company = parseCompanyInput("innodata.com");
+  const spec = buildSpec(company);
+  assert.equal(spec.company, "Innodata");
+  assert.equal(spec.brand.primary, "#0170B9");
+  assert.deepEqual(spec.content.items.map(({ title }) => title), ["Data Annotation", "Model Evaluation", "Synodex", "Agility PR"]);
+  assert.equal(spec.flows.find(({ id }) => id === "search-filter").steps[1].text, "Synodex");
+  assert.deepEqual(buildSpec({ ...company, industry: "retail" }).content, PROFILES.retail("Innodata"));
 });
