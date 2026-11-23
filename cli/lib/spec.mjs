@@ -84,7 +84,7 @@ export function buildSpec({ name, url = null, industry, primary, site = {} }) {
   const displayName = preset.displayName || site.title?.split(/[|\-–]/)[0].trim() || name;
   const vertical = industry || preset.industry || guessIndustry(`${name} ${site.title || ""} ${site.headline || ""}`);
   const brand = primary ? brandFromColor(primary) : preset.brand || (site.primary ? brandFromColor(site.primary) : generatedBrand(name));
-  const content = PROFILES[vertical](displayName);
+  const content = (vertical === preset.industry && preset.content) || PROFILES[vertical](displayName);
   const module = pascal(displayName);
   const id = slug.replace(/-/g, "");
   const items = content.items;

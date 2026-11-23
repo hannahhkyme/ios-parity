@@ -1,0 +1,600 @@
+{
+  "schema": 1,
+  "company": "Innodata",
+  "slug": "innodata",
+  "url": "https://innodata.com/",
+  "industry": "generic",
+  "tagline": "Data and human expertise for building AI",
+  "createdAt": "2026-11-23T17:14:58.157Z",
+  "brand": {
+    "primary": "#0170B9",
+    "accent": "#03588F",
+    "highlight": "#B5E5FF",
+    "surface": "#EAF4FA",
+    "onPrimary": "#FFFFFF"
+  },
+  "ios": {
+    "target": "InnodataApp",
+    "bundleId": "com.paritystudio.innodata",
+    "deploymentTarget": "17.0"
+  },
+  "android": {
+    "module": "app",
+    "packageName": "com.paritystudio.innodata",
+    "minSdk": 26,
+    "compileSdk": 34
+  },
+  "icons": {
+    "home": {
+      "ios": "house.fill",
+      "android": "Home"
+    },
+    "calendar": {
+      "ios": "calendar",
+      "android": "DateRange"
+    },
+    "list": {
+      "ios": "list.bullet",
+      "android": "List"
+    },
+    "person": {
+      "ios": "person.crop.circle",
+      "android": "AccountCircle"
+    },
+    "bag": {
+      "ios": "bag.fill",
+      "android": "ShoppingCart"
+    },
+    "star": {
+      "ios": "star.fill",
+      "android": "Star"
+    },
+    "bell": {
+      "ios": "bell.fill",
+      "android": "Notifications"
+    },
+    "check": {
+      "ios": "checkmark.circle.fill",
+      "android": "CheckCircle"
+    },
+    "heart": {
+      "ios": "heart.fill",
+      "android": "Favorite"
+    },
+    "mail": {
+      "ios": "envelope.fill",
+      "android": "Email"
+    },
+    "info": {
+      "ios": "info.circle.fill",
+      "android": "Info"
+    },
+    "place": {
+      "ios": "mappin.circle.fill",
+      "android": "Place"
+    },
+    "lock": {
+      "ios": "lock.fill",
+      "android": "Lock"
+    },
+    "settings": {
+      "ios": "gearshape.fill",
+      "android": "Settings"
+    },
+    "phone": {
+      "ios": "phone.fill",
+      "android": "Phone"
+    },
+    "build": {
+      "ios": "wrench.and.screwdriver.fill",
+      "android": "Build"
+    }
+  },
+  "content": {
+    "tabs": [
+      {
+        "id": "home",
+        "title": "Home",
+        "icon": "home"
+      },
+      {
+        "id": "browse",
+        "title": "Solutions",
+        "icon": "list"
+      },
+      {
+        "id": "account",
+        "title": "Account",
+        "icon": "person"
+      }
+    ],
+    "greeting": "Welcome to Innodata",
+    "hero": {
+      "eyebrow": "AI DATA SOLUTIONS",
+      "title": "Build AI with better data",
+      "subtitle": "Explore training data, annotation and model evaluation services.",
+      "cta": "Explore solutions"
+    },
+    "stats": [
+      {
+        "label": "Data services",
+        "value": "2",
+        "icon": "list"
+      },
+      {
+        "label": "Platforms",
+        "value": "2",
+        "icon": "star"
+      }
+    ],
+    "sectionTitle": "AI data services",
+    "searchPlaceholder": "Search solutions",
+    "items": [
+      {
+        "title": "Data Annotation",
+        "subtitle": "Label training datasets",
+        "value": "Labeling",
+        "badge": "AI Data",
+        "icon": "check"
+      },
+      {
+        "title": "Model Evaluation",
+        "subtitle": "Human feedback",
+        "value": "Evaluation",
+        "badge": "GenAI",
+        "icon": "star"
+      },
+      {
+        "title": "Synodex",
+        "subtitle": "Turn medical records into structured data",
+        "value": "Platform",
+        "badge": "Insurance",
+        "icon": "heart"
+      },
+      {
+        "title": "Agility PR",
+        "subtitle": "Monitor media coverage and reach journalists",
+        "value": "Platform",
+        "badge": "Media",
+        "icon": "mail"
+      }
+    ],
+    "detail": {
+      "optionsTitle": "Choose a data type",
+      "options": [
+        "Text",
+        "Images",
+        "Audio"
+      ],
+      "primaryAction": "Save interest",
+      "confirmation": "Interest saved"
+    },
+    "account": {
+      "name": "Demo account",
+      "subtitle": "Innodata solutions explorer",
+      "rows": [
+        {
+          "title": "Preferences",
+          "icon": "settings"
+        },
+        {
+          "title": "Privacy",
+          "icon": "lock"
+        },
+        {
+          "title": "Help & support",
+          "icon": "phone"
+        }
+      ],
+      "toggle": "Solution updates"
+    }
+  },
+  "components": [
+    {
+      "id": "home.topbar",
+      "screen": "home",
+      "kind": "TopBar",
+      "label": "Innodata"
+    },
+    {
+      "id": "home.hero",
+      "screen": "home",
+      "kind": "HeroBanner",
+      "label": "Build AI with better data"
+    },
+    {
+      "id": "home.hero.cta",
+      "screen": "home",
+      "kind": "PrimaryButton",
+      "label": "Explore solutions",
+      "role": "interactive"
+    },
+    {
+      "id": "home.stat.0",
+      "screen": "home",
+      "kind": "StatTile",
+      "label": "Data services: 2"
+    },
+    {
+      "id": "home.stat.1",
+      "screen": "home",
+      "kind": "StatTile",
+      "label": "Platforms: 2"
+    },
+    {
+      "id": "home.section",
+      "screen": "home",
+      "kind": "SectionHeader",
+      "label": "AI data services"
+    },
+    {
+      "id": "home.card.0",
+      "screen": "home",
+      "kind": "ItemCard",
+      "label": "Data Annotation",
+      "role": "interactive"
+    },
+    {
+      "id": "home.card.1",
+      "screen": "home",
+      "kind": "ItemCard",
+      "label": "Model Evaluation",
+      "role": "interactive"
+    },
+    {
+      "id": "tab.home",
+      "screen": "home",
+      "kind": "TabItem",
+      "label": "Home",
+      "role": "interactive"
+    },
+    {
+      "id": "tab.browse",
+      "screen": "home",
+      "kind": "TabItem",
+      "label": "Solutions",
+      "role": "interactive"
+    },
+    {
+      "id": "tab.account",
+      "screen": "home",
+      "kind": "TabItem",
+      "label": "Account",
+      "role": "interactive"
+    },
+    {
+      "id": "browse.search",
+      "screen": "browse",
+      "kind": "SearchField",
+      "label": "Search solutions",
+      "role": "input"
+    },
+    {
+      "id": "browse.row.0",
+      "screen": "browse",
+      "kind": "ListRow",
+      "label": "Data Annotation",
+      "role": "interactive"
+    },
+    {
+      "id": "browse.row.1",
+      "screen": "browse",
+      "kind": "ListRow",
+      "label": "Model Evaluation",
+      "role": "interactive"
+    },
+    {
+      "id": "browse.row.2",
+      "screen": "browse",
+      "kind": "ListRow",
+      "label": "Synodex",
+      "role": "interactive"
+    },
+    {
+      "id": "browse.row.3",
+      "screen": "browse",
+      "kind": "ListRow",
+      "label": "Agility PR",
+      "role": "interactive"
+    },
+    {
+      "id": "detail.header",
+      "screen": "detail",
+      "kind": "DetailHeader",
+      "label": "Data Annotation"
+    },
+    {
+      "id": "detail.value",
+      "screen": "detail",
+      "kind": "ValuePill",
+      "label": "Labeling"
+    },
+    {
+      "id": "detail.options",
+      "screen": "detail",
+      "kind": "SectionHeader",
+      "label": "Choose a data type"
+    },
+    {
+      "id": "detail.option.0",
+      "screen": "detail",
+      "kind": "Chip",
+      "label": "Text",
+      "role": "interactive",
+      "value": "selected"
+    },
+    {
+      "id": "detail.option.1",
+      "screen": "detail",
+      "kind": "Chip",
+      "label": "Images",
+      "role": "interactive",
+      "value": "unselected"
+    },
+    {
+      "id": "detail.option.2",
+      "screen": "detail",
+      "kind": "Chip",
+      "label": "Audio",
+      "role": "interactive",
+      "value": "unselected"
+    },
+    {
+      "id": "detail.primary",
+      "screen": "detail",
+      "kind": "PrimaryButton",
+      "label": "Save interest",
+      "role": "interactive"
+    },
+    {
+      "id": "detail.confirmation",
+      "screen": "detail_confirmed",
+      "kind": "ConfirmationBanner",
+      "label": "Interest saved"
+    },
+    {
+      "id": "account.profile",
+      "screen": "account",
+      "kind": "ProfileHeader",
+      "label": "Demo account"
+    },
+    {
+      "id": "account.row.0",
+      "screen": "account",
+      "kind": "SettingsRow",
+      "label": "Preferences",
+      "role": "interactive"
+    },
+    {
+      "id": "account.row.1",
+      "screen": "account",
+      "kind": "SettingsRow",
+      "label": "Privacy",
+      "role": "interactive"
+    },
+    {
+      "id": "account.row.2",
+      "screen": "account",
+      "kind": "SettingsRow",
+      "label": "Help & support",
+      "role": "interactive"
+    },
+    {
+      "id": "account.toggle",
+      "screen": "account",
+      "kind": "ToggleRow",
+      "label": "Solution updates",
+      "role": "interactive",
+      "value": "off"
+    }
+  ],
+  "screens": [
+    {
+      "id": "home",
+      "name": "Home",
+      "route": []
+    },
+    {
+      "id": "browse",
+      "name": "Solutions",
+      "route": [
+        {
+          "action": "tap",
+          "target": "tab.browse"
+        }
+      ]
+    },
+    {
+      "id": "detail",
+      "name": "Detail",
+      "route": [
+        {
+          "action": "tap",
+          "target": "tab.browse"
+        },
+        {
+          "action": "tap",
+          "target": "browse.row.0"
+        }
+      ]
+    },
+    {
+      "id": "detail_confirmed",
+      "name": "Confirmation",
+      "route": [
+        {
+          "action": "tap",
+          "target": "tab.browse"
+        },
+        {
+          "action": "tap",
+          "target": "browse.row.0"
+        },
+        {
+          "action": "tap",
+          "target": "detail.primary"
+        }
+      ]
+    },
+    {
+      "id": "account",
+      "name": "Account",
+      "route": [
+        {
+          "action": "tap",
+          "target": "tab.account"
+        }
+      ]
+    }
+  ],
+  "flows": [
+    {
+      "id": "hero-cta",
+      "name": "\"Explore solutions\" opens Solutions",
+      "steps": [
+        {
+          "action": "tap",
+          "target": "home.hero.cta"
+        },
+        {
+          "action": "expectExists",
+          "target": "browse.search"
+        }
+      ]
+    },
+    {
+      "id": "open-detail",
+      "name": "Open \"Data Annotation\"",
+      "steps": [
+        {
+          "action": "tap",
+          "target": "tab.browse"
+        },
+        {
+          "action": "tap",
+          "target": "browse.row.0"
+        },
+        {
+          "action": "expectLabel",
+          "target": "detail.header",
+          "value": "Data Annotation"
+        }
+      ]
+    },
+    {
+      "id": "select-option",
+      "name": "Choose \"Images\"",
+      "steps": [
+        {
+          "action": "tap",
+          "target": "tab.browse"
+        },
+        {
+          "action": "tap",
+          "target": "browse.row.0"
+        },
+        {
+          "action": "tap",
+          "target": "detail.option.1"
+        },
+        {
+          "action": "expectValue",
+          "target": "detail.option.1",
+          "value": "selected"
+        },
+        {
+          "action": "expectValue",
+          "target": "detail.option.0",
+          "value": "unselected"
+        }
+      ]
+    },
+    {
+      "id": "primary-action",
+      "name": "\"Save interest\" confirms",
+      "steps": [
+        {
+          "action": "tap",
+          "target": "tab.browse"
+        },
+        {
+          "action": "tap",
+          "target": "browse.row.0"
+        },
+        {
+          "action": "tap",
+          "target": "detail.primary"
+        },
+        {
+          "action": "expectLabel",
+          "target": "detail.confirmation",
+          "value": "Interest saved"
+        }
+      ]
+    },
+    {
+      "id": "search-filter",
+      "name": "Search \"Synodex\" filters the list",
+      "steps": [
+        {
+          "action": "tap",
+          "target": "tab.browse"
+        },
+        {
+          "action": "type",
+          "target": "browse.search",
+          "text": "Synodex"
+        },
+        {
+          "action": "expectExists",
+          "target": "browse.row.2"
+        },
+        {
+          "action": "expectMissing",
+          "target": "browse.row.0"
+        }
+      ]
+    },
+    {
+      "id": "toggle",
+      "name": "Turn on \"Solution updates\"",
+      "steps": [
+        {
+          "action": "tap",
+          "target": "tab.account"
+        },
+        {
+          "action": "tap",
+          "target": "account.toggle"
+        },
+        {
+          "action": "expectValue",
+          "target": "account.toggle",
+          "value": "on"
+        }
+      ]
+    },
+    {
+      "id": "tab-nav",
+      "name": "Tab bar navigation",
+      "steps": [
+        {
+          "action": "tap",
+          "target": "tab.account"
+        },
+        {
+          "action": "expectExists",
+          "target": "account.profile"
+        },
+        {
+          "action": "tap",
+          "target": "tab.home"
+        },
+        {
+          "action": "expectExists",
+          "target": "home.hero"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,198 @@
+{
+  "device" : {
+    "device" : "iPhone 17",
+    "height" : 874,
+    "os" : "iOS 26.5",
+    "platform" : "ios",
+    "runner" : "XCUITest",
+    "unit" : "pt",
+    "width" : 402
+  },
+  "flows" : {
+    "hero-cta" : {
+      "passed" : true,
+      "steps" : [
+        {
+          "action" : "tap",
+          "detail" : "tapped home.hero.cta",
+          "ok" : true,
+          "target" : "home.hero.cta"
+        },
+        {
+          "action" : "expectExists",
+          "detail" : "browse.search shown",
+          "ok" : true,
+          "target" : "browse.search"
+        }
+      ]
+    },
+    "open-detail" : {
+      "passed" : true,
+      "steps" : [
+        {
+          "action" : "tap",
+          "detail" : "tapped tab.browse",
+          "ok" : true,
+          "target" : "tab.browse"
+        },
+        {
+          "action" : "tap",
+          "detail" : "tapped browse.row.0",
+          "ok" : true,
+          "target" : "browse.row.0"
+        },
+        {
+          "action" : "expectLabel",
+          "detail" : "label \"Data Annotation\" (expected \"Data Annotation\")",
+          "ok" : true,
+          "target" : "detail.header"
+        }
+      ]
+    },
+    "primary-action" : {
+      "passed" : true,
+      "steps" : [
+        {
+          "action" : "tap",
+          "detail" : "tapped tab.browse",
+          "ok" : true,
+          "target" : "tab.browse"
+        },
+        {
+          "action" : "tap",
+          "detail" : "tapped browse.row.0",
+          "ok" : true,
+          "target" : "browse.row.0"
+        },
+        {
+          "action" : "tap",
+          "detail" : "tapped detail.primary",
+          "ok" : true,
+          "target" : "detail.primary"
+        },
+        {
+          "action" : "expectLabel",
+          "detail" : "label \"Interest saved\" (expected \"Interest saved\")",
+          "ok" : true,
+          "target" : "detail.confirmation"
+        }
+      ]
+    },
+    "search-filter" : {
+      "passed" : true,
+      "steps" : [
+        {
+          "action" : "tap",
+          "detail" : "tapped tab.browse",
+          "ok" : true,
+          "target" : "tab.browse"
+        },
+        {
+          "action" : "type",
+          "detail" : "typed \"Synodex\"",
+          "ok" : true,
+          "target" : "browse.search"
+        },
+        {
+          "action" : "expectExists",
+          "detail" : "browse.row.2 shown",
+          "ok" : true,
+          "target" : "browse.row.2"
+        },
+        {
+          "action" : "expectMissing",
+          "detail" : "browse.row.0 hidden",
+          "ok" : true,
+          "target" : "browse.row.0"
+        }
+      ]
+    },
+    "select-option" : {
+      "passed" : true,
+      "steps" : [
+        {
+          "action" : "tap",
+          "detail" : "tapped tab.browse",
+          "ok" : true,
+          "target" : "tab.browse"
+        },
+        {
+          "action" : "tap",
+          "detail" : "tapped browse.row.0",
+          "ok" : true,
+          "target" : "browse.row.0"
+        },
+        {
+          "action" : "tap",
+          "detail" : "tapped detail.option.1",
+          "ok" : true,
+          "target" : "detail.option.1"
+        },
+        {
+          "action" : "expectValue",
+          "detail" : "value \"selected\" (expected \"selected\")",
+          "ok" : true,
+          "target" : "detail.option.1"
+        },
+        {
+          "action" : "expectValue",
+          "detail" : "value \"unselected\" (expected \"unselected\")",
+          "ok" : true,
+          "target" : "detail.option.0"
+        }
+      ]
+    },
+    "tab-nav" : {
+      "passed" : true,
+      "steps" : [
+        {
+          "action" : "tap",
+          "detail" : "tapped tab.account",
+          "ok" : true,
+          "target" : "tab.account"
+        },
+        {
+          "action" : "expectExists",
+          "detail" : "account.profile shown",
+          "ok" : true,
+          "target" : "account.profile"
+        },
+        {
+          "action" : "tap",
+          "detail" : "tapped tab.home",
+          "ok" : true,
+          "target" : "tab.home"
+        },
+        {
+          "action" : "expectExists",
+          "detail" : "home.hero shown",
+          "ok" : true,
+          "target" : "home.hero"
+        }
+      ]
+    },
+    "toggle" : {
+      "passed" : true,
+      "steps" : [
+        {
+          "action" : "tap",
+          "detail" : "tapped tab.account",
+          "ok" : true,
+          "target" : "tab.account"
+        },
+        {
+          "action" : "tap",
+          "detail" : "tapped account.toggle",
+          "ok" : true,
+          "target" : "account.toggle"
+        },
+        {
+          "action" : "expectValue",
+          "detail" : "value \"on\" (expected \"on\")",
+          "ok" : true,
+          "target" : "account.toggle"
+        }
+      ]
+    }
+  }
+}
