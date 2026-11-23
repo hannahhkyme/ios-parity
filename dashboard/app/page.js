@@ -1,11 +1,11 @@
 import GenerateForm from "@/components/GenerateForm";
-import { listCustomers } from "@/lib/data";
+import { listHomeCustomers } from "@/lib/data";
 import { generationSupport } from "@/lib/generation";
 
 export const dynamic = "force-dynamic";
 
 export default function Home() {
-  const customers = listCustomers();
+  const customers = listHomeCustomers();
   return (
     <>
       <section className="intro">

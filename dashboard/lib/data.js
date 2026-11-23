@@ -14,6 +14,11 @@ export function listCustomers() {
     .sort((a, b) => (b.spec.createdAt || "").localeCompare(a.spec.createdAt || ""));
 }
 
+// Kept off the home page's Customers list; their pages stay reachable by direct link.
+const HIDDEN_FROM_HOME = new Set(["evinova"]);
+
+export const listHomeCustomers = () => listCustomers().filter(({ slug }) => !HIDDEN_FROM_HOME.has(slug));
+
 export function getCustomer(slug) {
   if (!/^[a-z0-9-]+$/.test(slug)) return null;
   const dir = path.join(CUSTOMERS, slug);
