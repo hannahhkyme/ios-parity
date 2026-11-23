@@ -1,0 +1,8 @@
+{
+  "company": "Evinova",
+  "generated": true,
+  "ios": "done",
+  "android": "done",
+  "updatedAt": "2026-11-23T14:00:12.937Z",
+  "androidError": "Android run did not write components.json; see evidence/android/gradle.log\nNOTE: Picked up JDK_JAVA_OPTIONS: -XX:+IgnoreUnrecognizedVMOptions -XX:+UnlockDiagnosticVMOptions -XX:-UseBASE64Intrinsics\nNOTE: Picked up JDK_JAVA_OPTIONS: -XX:+IgnoreUnrecognizedVMOptions -XX:+UnlockDiagnosticVMOptions -XX:-UseBASE64Intrinsics\n\n2 tests completed, 2 failed\n\nFAILURE: Build failed with an exception.\n\n* What went wrong:\nExecution failed for task ':app:testDebugUnitTest'.\n> There were failing tests. See the report at: file:///Users/devin/work/parity-studio/customers/evinova/android/app/build/reports/tests/testDebugUnitTest/index.html\n\n* Try:\n> Run with --scan to get full insights.\n\nBUILD FAILED in 1m 2s\n"
+}

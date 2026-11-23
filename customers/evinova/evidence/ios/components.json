@@ -1,0 +1,397 @@
+{
+  "components" : {
+    "account.profile" : {
+      "found" : true,
+      "frame" : {
+        "h" : 96,
+        "w" : 362,
+        "x" : 20,
+        "y" : 118
+      },
+      "image" : "components\/account.profile.png",
+      "label" : "Maya Thompson",
+      "role" : "static",
+      "value" : ""
+    },
+    "account.row.0" : {
+      "found" : true,
+      "frame" : {
+        "h" : 52,
+        "w" : 362,
+        "x" : 20,
+        "y" : 230
+      },
+      "image" : "components\/account.row.0.png",
+      "label" : "My study",
+      "role" : "interactive",
+      "value" : ""
+    },
+    "account.row.1" : {
+      "found" : true,
+      "frame" : {
+        "h" : 52,
+        "w" : 362,
+        "x" : 20,
+        "y" : 283
+      },
+      "image" : "components\/account.row.1.png",
+      "label" : "Consent documents",
+      "role" : "interactive",
+      "value" : ""
+    },
+    "account.row.2" : {
+      "found" : true,
+      "frame" : {
+        "h" : 52,
+        "w" : 362,
+        "x" : 20,
+        "y" : 336
+      },
+      "image" : "components\/account.row.2.png",
+      "label" : "Contact site team",
+      "role" : "interactive",
+      "value" : ""
+    },
+    "account.toggle" : {
+      "found" : true,
+      "frame" : {
+        "h" : 56,
+        "w" : 362,
+        "x" : 20,
+        "y" : 404
+      },
+      "image" : "components\/account.toggle.png",
+      "label" : "Medication reminders",
+      "role" : "interactive",
+      "value" : "off"
+    },
+    "browse.row.0" : {
+      "found" : true,
+      "frame" : {
+        "h" : 64,
+        "w" : 362,
+        "x" : 19.999999999999972,
+        "y" : 170
+      },
+      "image" : "components\/browse.row.0.png",
+      "label" : "Daily symptom diary",
+      "role" : "interactive",
+      "value" : ""
+    },
+    "browse.row.1" : {
+      "found" : true,
+      "frame" : {
+        "h" : 64,
+        "w" : 362,
+        "x" : 19.999999999999972,
+        "y" : 235
+      },
+      "image" : "components\/browse.row.1.png",
+      "label" : "Week 6 site visit",
+      "role" : "interactive",
+      "value" : ""
+    },
+    "browse.row.2" : {
+      "found" : true,
+      "frame" : {
+        "h" : 64,
+        "w" : 362,
+        "x" : 19.999999999999972,
+        "y" : 300
+      },
+      "image" : "components\/browse.row.2.png",
+      "label" : "Wearable sync",
+      "role" : "interactive",
+      "value" : ""
+    },
+    "browse.row.3" : {
+      "found" : true,
+      "frame" : {
+        "h" : 64,
+        "w" : 362,
+        "x" : 19.999999999999972,
+        "y" : 365
+      },
+      "image" : "components\/browse.row.3.png",
+      "label" : "Message from Dr. Patel",
+      "role" : "interactive",
+      "value" : ""
+    },
+    "browse.search" : {
+      "found" : true,
+      "frame" : {
+        "h" : 22,
+        "w" : 305.66666666666663,
+        "x" : 62.333333333333336,
+        "y" : 125
+      },
+      "image" : "components\/browse.search.png",
+      "label" : "Search activities",
+      "role" : "input",
+      "value" : ""
+    },
+    "detail.confirmation" : {
+      "found" : true,
+      "frame" : {
+        "h" : 52,
+        "w" : 362,
+        "x" : 20,
+        "y" : 521.33333333333326
+      },
+      "image" : "components\/detail.confirmation.png",
+      "label" : "Entry sent to your site team",
+      "role" : "static",
+      "value" : ""
+    },
+    "detail.header" : {
+      "found" : true,
+      "frame" : {
+        "h" : 169.33333333333331,
+        "w" : 402,
+        "x" : 0,
+        "y" : 106
+      },
+      "image" : "components\/detail.header.png",
+      "label" : "Daily symptom diary",
+      "role" : "static",
+      "value" : ""
+    },
+    "detail.option.0" : {
+      "found" : true,
+      "frame" : {
+        "h" : 44,
+        "w" : 114,
+        "x" : 20,
+        "y" : 389.33333333333331
+      },
+      "image" : "components\/detail.option.0.png",
+      "label" : "Better",
+      "role" : "interactive",
+      "value" : "selected"
+    },
+    "detail.option.1" : {
+      "found" : true,
+      "frame" : {
+        "h" : 45,
+        "w" : 115,
+        "x" : 143.5,
+        "y" : 388.83334350585938
+      },
+      "image" : "components\/detail.option.1.png",
+      "label" : "Same",
+      "role" : "interactive",
+      "value" : "unselected"
+    },
+    "detail.option.2" : {
+      "found" : true,
+      "frame" : {
+        "h" : 45,
+        "w" : 115,
+        "x" : 267.5,
+        "y" : 388.83334350585938
+      },
+      "image" : "components\/detail.option.2.png",
+      "label" : "Worse",
+      "role" : "interactive",
+      "value" : "unselected"
+    },
+    "detail.options" : {
+      "found" : true,
+      "frame" : {
+        "h" : 28,
+        "w" : 402,
+        "x" : 0,
+        "y" : 343.33333333333331
+      },
+      "image" : "components\/detail.options.png",
+      "label" : "How are you feeling today?",
+      "role" : "static",
+      "value" : ""
+    },
+    "detail.primary" : {
+      "found" : true,
+      "frame" : {
+        "h" : 52,
+        "w" : 362,
+        "x" : 20,
+        "y" : 451.33333333333331
+      },
+      "image" : "components\/detail.primary.png",
+      "label" : "Submit entry",
+      "role" : "interactive",
+      "value" : ""
+    },
+    "detail.value" : {
+      "found" : true,
+      "frame" : {
+        "h" : 32,
+        "w" : 102.33333333333333,
+        "x" : 20,
+        "y" : 293.33333333333331
+      },
+      "image" : "components\/detail.value.png",
+      "label" : "Due today",
+      "role" : "static",
+      "value" : ""
+    },
+    "home.card.0" : {
+      "found" : true,
+      "frame" : {
+        "h" : 71.999969482421875,
+        "w" : 362,
+        "x" : 20,
+        "y" : 451.33334350585938
+      },
+      "image" : "components\/home.card.0.png",
+      "label" : "Daily symptom diary",
+      "role" : "interactive",
+      "value" : ""
+    },
+    "home.card.1" : {
+      "found" : true,
+      "frame" : {
+        "h" : 72,
+        "w" : 362,
+        "x" : 20,
+        "y" : 539.33331298828125
+      },
+      "image" : "components\/home.card.1.png",
+      "label" : "Week 6 site visit",
+      "role" : "interactive",
+      "value" : ""
+    },
+    "home.hero" : {
+      "found" : true,
+      "frame" : {
+        "h" : 177.33333333333331,
+        "w" : 362,
+        "x" : 20,
+        "y" : 134
+      },
+      "image" : "components\/home.hero.png",
+      "label" : "Your Week 6 diary is ready",
+      "role" : "static",
+      "value" : ""
+    },
+    "home.hero.cta" : {
+      "found" : true,
+      "frame" : {
+        "h" : 39.999999999999972,
+        "w" : 111.66666666666666,
+        "x" : 38,
+        "y" : 253.33333333333334
+      },
+      "image" : "components\/home.hero.cta.png",
+      "label" : "Start diary",
+      "role" : "interactive",
+      "value" : ""
+    },
+    "home.section" : {
+      "found" : true,
+      "frame" : {
+        "h" : 28,
+        "w" : 402,
+        "x" : 0,
+        "y" : 407.33333333333331
+      },
+      "image" : "components\/home.section.png",
+      "label" : "Up next",
+      "role" : "static",
+      "value" : ""
+    },
+    "home.stat.0" : {
+      "found" : true,
+      "frame" : {
+        "h" : 64,
+        "w" : 175,
+        "x" : 20,
+        "y" : 327.33333333333331
+      },
+      "image" : "components\/home.stat.0.png",
+      "label" : "Diary streak: 12 days",
+      "role" : "static",
+      "value" : ""
+    },
+    "home.stat.1" : {
+      "found" : true,
+      "frame" : {
+        "h" : 64,
+        "w" : 175,
+        "x" : 207,
+        "y" : 327.33333333333331
+      },
+      "image" : "components\/home.stat.1.png",
+      "label" : "Next visit: Thu 9:30",
+      "role" : "static",
+      "value" : ""
+    },
+    "home.topbar" : {
+      "found" : true,
+      "frame" : {
+        "h" : 56,
+        "w" : 402,
+        "x" : 0,
+        "y" : 62
+      },
+      "image" : "components\/home.topbar.png",
+      "label" : "Evinova",
+      "role" : "static",
+      "value" : ""
+    },
+    "tab.account" : {
+      "found" : true,
+      "frame" : {
+        "h" : 56,
+        "w" : 128.66666666666669,
+        "x" : 273.33333333333331,
+        "y" : 784
+      },
+      "image" : "components\/tab.account.png",
+      "label" : "Profile",
+      "role" : "interactive",
+      "value" : ""
+    },
+    "tab.browse" : {
+      "found" : true,
+      "frame" : {
+        "h" : 56,
+        "w" : 128.66666666666666,
+        "x" : 136.66666666666666,
+        "y" : 784
+      },
+      "image" : "components\/tab.browse.png",
+      "label" : "Activities",
+      "role" : "interactive",
+      "value" : ""
+    },
+    "tab.home" : {
+      "found" : true,
+      "frame" : {
+        "h" : 56,
+        "w" : 128.66666666666666,
+        "x" : 0,
+        "y" : 784
+      },
+      "image" : "components\/tab.home.png",
+      "label" : "Today",
+      "role" : "interactive",
+      "value" : ""
+    }
+  },
+  "device" : {
+    "device" : "iPhone 17",
+    "height" : 874,
+    "os" : "iOS 27.0",
+    "platform" : "ios",
+    "runner" : "XCUITest",
+    "unit" : "pt",
+    "width" : 402
+  },
+  "screens" : {
+    "account" : "screens\/account.png",
+    "browse" : "screens\/browse.png",
+    "detail" : "screens\/detail.png",
+    "detail_confirmed" : "screens\/detail_confirmed.png",
+    "home" : "screens\/home.png"
+  }
+}

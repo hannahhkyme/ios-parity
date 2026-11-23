@@ -1,0 +1,600 @@
+{
+  "schema": 1,
+  "company": "Evinova",
+  "slug": "evinova",
+  "url": "https://evinova.com/",
+  "industry": "clinical",
+  "tagline": "Clinical trials, designed around the participant",
+  "createdAt": "2026-11-23T13:50:49.045Z",
+  "brand": {
+    "primary": "#3B0030",
+    "accent": "#ED4A73",
+    "highlight": "#FFCD00",
+    "surface": "#EFE3E9",
+    "onPrimary": "#FFFFFF"
+  },
+  "ios": {
+    "target": "EvinovaApp",
+    "bundleId": "com.paritystudio.evinova",
+    "deploymentTarget": "17.0"
+  },
+  "android": {
+    "module": "app",
+    "packageName": "com.paritystudio.evinova",
+    "minSdk": 26,
+    "compileSdk": 34
+  },
+  "icons": {
+    "home": {
+      "ios": "house.fill",
+      "android": "Home"
+    },
+    "calendar": {
+      "ios": "calendar",
+      "android": "DateRange"
+    },
+    "list": {
+      "ios": "list.bullet",
+      "android": "List"
+    },
+    "person": {
+      "ios": "person.crop.circle",
+      "android": "AccountCircle"
+    },
+    "bag": {
+      "ios": "bag.fill",
+      "android": "ShoppingCart"
+    },
+    "star": {
+      "ios": "star.fill",
+      "android": "Star"
+    },
+    "bell": {
+      "ios": "bell.fill",
+      "android": "Notifications"
+    },
+    "check": {
+      "ios": "checkmark.circle.fill",
+      "android": "CheckCircle"
+    },
+    "heart": {
+      "ios": "heart.fill",
+      "android": "Favorite"
+    },
+    "mail": {
+      "ios": "envelope.fill",
+      "android": "Email"
+    },
+    "info": {
+      "ios": "info.circle.fill",
+      "android": "Info"
+    },
+    "place": {
+      "ios": "mappin.circle.fill",
+      "android": "Place"
+    },
+    "lock": {
+      "ios": "lock.fill",
+      "android": "Lock"
+    },
+    "settings": {
+      "ios": "gearshape.fill",
+      "android": "Settings"
+    },
+    "phone": {
+      "ios": "phone.fill",
+      "android": "Phone"
+    },
+    "build": {
+      "ios": "wrench.and.screwdriver.fill",
+      "android": "Build"
+    }
+  },
+  "content": {
+    "tabs": [
+      {
+        "id": "home",
+        "title": "Today",
+        "icon": "home"
+      },
+      {
+        "id": "browse",
+        "title": "Activities",
+        "icon": "list"
+      },
+      {
+        "id": "account",
+        "title": "Profile",
+        "icon": "person"
+      }
+    ],
+    "greeting": "Good morning, Maya",
+    "hero": {
+      "eyebrow": "Study ONC-2207 · Week 6",
+      "title": "Your Week 6 diary is ready",
+      "subtitle": "Takes about 4 minutes. Your site team sees it the same day.",
+      "cta": "Start diary"
+    },
+    "stats": [
+      {
+        "label": "Diary streak",
+        "value": "12 days",
+        "icon": "check"
+      },
+      {
+        "label": "Next visit",
+        "value": "Thu 9:30",
+        "icon": "calendar"
+      }
+    ],
+    "sectionTitle": "Up next",
+    "searchPlaceholder": "Search activities",
+    "items": [
+      {
+        "title": "Daily symptom diary",
+        "subtitle": "eCOA · 4 min",
+        "value": "Due today",
+        "badge": "Required",
+        "icon": "list"
+      },
+      {
+        "title": "Week 6 site visit",
+        "subtitle": "Cambridge Research Site",
+        "value": "Thu 9:30",
+        "badge": "Visit",
+        "icon": "calendar"
+      },
+      {
+        "title": "Wearable sync",
+        "subtitle": "Activity tracker",
+        "value": "Synced",
+        "badge": "Device",
+        "icon": "heart"
+      },
+      {
+        "title": "Message from Dr. Patel",
+        "subtitle": "Study coordinator",
+        "value": "New",
+        "badge": "Inbox",
+        "icon": "mail"
+      }
+    ],
+    "detail": {
+      "optionsTitle": "How are you feeling today?",
+      "options": [
+        "Better",
+        "Same",
+        "Worse"
+      ],
+      "primaryAction": "Submit entry",
+      "confirmation": "Entry sent to your site team"
+    },
+    "account": {
+      "name": "Maya Thompson",
+      "subtitle": "Participant 0417 · ONC-2207",
+      "rows": [
+        {
+          "title": "My study",
+          "icon": "info"
+        },
+        {
+          "title": "Consent documents",
+          "icon": "lock"
+        },
+        {
+          "title": "Contact site team",
+          "icon": "phone"
+        }
+      ],
+      "toggle": "Medication reminders"
+    }
+  },
+  "components": [
+    {
+      "id": "home.topbar",
+      "screen": "home",
+      "kind": "TopBar",
+      "label": "Evinova"
+    },
+    {
+      "id": "home.hero",
+      "screen": "home",
+      "kind": "HeroBanner",
+      "label": "Your Week 6 diary is ready"
+    },
+    {
+      "id": "home.hero.cta",
+      "screen": "home",
+      "kind": "PrimaryButton",
+      "label": "Start diary",
+      "role": "interactive"
+    },
+    {
+      "id": "home.stat.0",
+      "screen": "home",
+      "kind": "StatTile",
+      "label": "Diary streak: 12 days"
+    },
+    {
+      "id": "home.stat.1",
+      "screen": "home",
+      "kind": "StatTile",
+      "label": "Next visit: Thu 9:30"
+    },
+    {
+      "id": "home.section",
+      "screen": "home",
+      "kind": "SectionHeader",
+      "label": "Up next"
+    },
+    {
+      "id": "home.card.0",
+      "screen": "home",
+      "kind": "ItemCard",
+      "label": "Daily symptom diary",
+      "role": "interactive"
+    },
+    {
+      "id": "home.card.1",
+      "screen": "home",
+      "kind": "ItemCard",
+      "label": "Week 6 site visit",
+      "role": "interactive"
+    },
+    {
+      "id": "tab.home",
+      "screen": "home",
+      "kind": "TabItem",
+      "label": "Today",
+      "role": "interactive"
+    },
+    {
+      "id": "tab.browse",
+      "screen": "home",
+      "kind": "TabItem",
+      "label": "Activities",
+      "role": "interactive"
+    },
+    {
+      "id": "tab.account",
+      "screen": "home",
+      "kind": "TabItem",
+      "label": "Profile",
+      "role": "interactive"
+    },
+    {
+      "id": "browse.search",
+      "screen": "browse",
+      "kind": "SearchField",
+      "label": "Search activities",
+      "role": "input"
+    },
+    {
+      "id": "browse.row.0",
+      "screen": "browse",
+      "kind": "ListRow",
+      "label": "Daily symptom diary",
+      "role": "interactive"
+    },
+    {
+      "id": "browse.row.1",
+      "screen": "browse",
+      "kind": "ListRow",
+      "label": "Week 6 site visit",
+      "role": "interactive"
+    },
+    {
+      "id": "browse.row.2",
+      "screen": "browse",
+      "kind": "ListRow",
+      "label": "Wearable sync",
+      "role": "interactive"
+    },
+    {
+      "id": "browse.row.3",
+      "screen": "browse",
+      "kind": "ListRow",
+      "label": "Message from Dr. Patel",
+      "role": "interactive"
+    },
+    {
+      "id": "detail.header",
+      "screen": "detail",
+      "kind": "DetailHeader",
+      "label": "Daily symptom diary"
+    },
+    {
+      "id": "detail.value",
+      "screen": "detail",
+      "kind": "ValuePill",
+      "label": "Due today"
+    },
+    {
+      "id": "detail.options",
+      "screen": "detail",
+      "kind": "SectionHeader",
+      "label": "How are you feeling today?"
+    },
+    {
+      "id": "detail.option.0",
+      "screen": "detail",
+      "kind": "Chip",
+      "label": "Better",
+      "role": "interactive",
+      "value": "selected"
+    },
+    {
+      "id": "detail.option.1",
+      "screen": "detail",
+      "kind": "Chip",
+      "label": "Same",
+      "role": "interactive",
+      "value": "unselected"
+    },
+    {
+      "id": "detail.option.2",
+      "screen": "detail",
+      "kind": "Chip",
+      "label": "Worse",
+      "role": "interactive",
+      "value": "unselected"
+    },
+    {
+      "id": "detail.primary",
+      "screen": "detail",
+      "kind": "PrimaryButton",
+      "label": "Submit entry",
+      "role": "interactive"
+    },
+    {
+      "id": "detail.confirmation",
+      "screen": "detail_confirmed",
+      "kind": "ConfirmationBanner",
+      "label": "Entry sent to your site team"
+    },
+    {
+      "id": "account.profile",
+      "screen": "account",
+      "kind": "ProfileHeader",
+      "label": "Maya Thompson"
+    },
+    {
+      "id": "account.row.0",
+      "screen": "account",
+      "kind": "SettingsRow",
+      "label": "My study",
+      "role": "interactive"
+    },
+    {
+      "id": "account.row.1",
+      "screen": "account",
+      "kind": "SettingsRow",
+      "label": "Consent documents",
+      "role": "interactive"
+    },
+    {
+      "id": "account.row.2",
+      "screen": "account",
+      "kind": "SettingsRow",
+      "label": "Contact site team",
+      "role": "interactive"
+    },
+    {
+      "id": "account.toggle",
+      "screen": "account",
+      "kind": "ToggleRow",
+      "label": "Medication reminders",
+      "role": "interactive",
+      "value": "off"
+    }
+  ],
+  "screens": [
+    {
+      "id": "home",
+      "name": "Today",
+      "route": []
+    },
+    {
+      "id": "browse",
+      "name": "Activities",
+      "route": [
+        {
+          "action": "tap",
+          "target": "tab.browse"
+        }
+      ]
+    },
+    {
+      "id": "detail",
+      "name": "Detail",
+      "route": [
+        {
+          "action": "tap",
+          "target": "tab.browse"
+        },
+        {
+          "action": "tap",
+          "target": "browse.row.0"
+        }
+      ]
+    },
+    {
+      "id": "detail_confirmed",
+      "name": "Confirmation",
+      "route": [
+        {
+          "action": "tap",
+          "target": "tab.browse"
+        },
+        {
+          "action": "tap",
+          "target": "browse.row.0"
+        },
+        {
+          "action": "tap",
+          "target": "detail.primary"
+        }
+      ]
+    },
+    {
+      "id": "account",
+      "name": "Profile",
+      "route": [
+        {
+          "action": "tap",
+          "target": "tab.account"
+        }
+      ]
+    }
+  ],
+  "flows": [
+    {
+      "id": "hero-cta",
+      "name": "\"Start diary\" opens Activities",
+      "steps": [
+        {
+          "action": "tap",
+          "target": "home.hero.cta"
+        },
+        {
+          "action": "expectExists",
+          "target": "browse.search"
+        }
+      ]
+    },
+    {
+      "id": "open-detail",
+      "name": "Open \"Daily symptom diary\"",
+      "steps": [
+        {
+          "action": "tap",
+          "target": "tab.browse"
+        },
+        {
+          "action": "tap",
+          "target": "browse.row.0"
+        },
+        {
+          "action": "expectLabel",
+          "target": "detail.header",
+          "value": "Daily symptom diary"
+        }
+      ]
+    },
+    {
+      "id": "select-option",
+      "name": "Choose \"Same\"",
+      "steps": [
+        {
+          "action": "tap",
+          "target": "tab.browse"
+        },
+        {
+          "action": "tap",
+          "target": "browse.row.0"
+        },
+        {
+          "action": "tap",
+          "target": "detail.option.1"
+        },
+        {
+          "action": "expectValue",
+          "target": "detail.option.1",
+          "value": "selected"
+        },
+        {
+          "action": "expectValue",
+          "target": "detail.option.0",
+          "value": "unselected"
+        }
+      ]
+    },
+    {
+      "id": "primary-action",
+      "name": "\"Submit entry\" confirms",
+      "steps": [
+        {
+          "action": "tap",
+          "target": "tab.browse"
+        },
+        {
+          "action": "tap",
+          "target": "browse.row.0"
+        },
+        {
+          "action": "tap",
+          "target": "detail.primary"
+        },
+        {
+          "action": "expectLabel",
+          "target": "detail.confirmation",
+          "value": "Entry sent to your site team"
+        }
+      ]
+    },
+    {
+      "id": "search-filter",
+      "name": "Search \"Wearable\" filters the list",
+      "steps": [
+        {
+          "action": "tap",
+          "target": "tab.browse"
+        },
+        {
+          "action": "type",
+          "target": "browse.search",
+          "text": "Wearable"
+        },
+        {
+          "action": "expectExists",
+          "target": "browse.row.2"
+        },
+        {
+          "action": "expectMissing",
+          "target": "browse.row.0"
+        }
+      ]
+    },
+    {
+      "id": "toggle",
+      "name": "Turn on \"Medication reminders\"",
+      "steps": [
+        {
+          "action": "tap",
+          "target": "tab.account"
+        },
+        {
+          "action": "tap",
+          "target": "account.toggle"
+        },
+        {
+          "action": "expectValue",
+          "target": "account.toggle",
+          "value": "on"
+        }
+      ]
+    },
+    {
+      "id": "tab-nav",
+      "name": "Tab bar navigation",
+      "steps": [
+        {
+          "action": "tap",
+          "target": "tab.account"
+        },
+        {
+          "action": "expectExists",
+          "target": "account.profile"
+        },
+        {
+          "action": "tap",
+          "target": "tab.home"
+        },
+        {
+          "action": "expectExists",
+          "target": "home.hero"
+        }
+      ]
+    }
+  ]
+}

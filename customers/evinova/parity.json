@@ -1,0 +1,1796 @@
+{
+  "schema": 1,
+  "company": "Evinova",
+  "slug": "evinova",
+  "url": "https://evinova.com/",
+  "industry": "clinical",
+  "tagline": "Clinical trials, designed around the participant",
+  "brand": {
+    "primary": "#3B0030",
+    "accent": "#ED4A73",
+    "highlight": "#FFCD00",
+    "surface": "#EFE3E9",
+    "onPrimary": "#FFFFFF"
+  },
+  "generatedAt": "2026-11-23T14:00:35.959Z",
+  "ios": {
+    "target": "EvinovaApp",
+    "bundleId": "com.paritystudio.evinova",
+    "deploymentTarget": "17.0",
+    "device": {
+      "device": "iPhone 17",
+      "height": 874,
+      "os": "iOS 27.0",
+      "platform": "ios",
+      "runner": "XCUITest",
+      "unit": "pt",
+      "width": 402
+    }
+  },
+  "android": {
+    "module": "app",
+    "packageName": "com.paritystudio.evinova",
+    "minSdk": 26,
+    "compileSdk": 34,
+    "device": {
+      "platform": "android",
+      "device": "Robolectric virtual device (402×874 dp, xxhdpi)",
+      "os": "Android 14 (API 34)",
+      "runner": "Robolectric + Compose UI Test",
+      "width": 402,
+      "height": 874,
+      "unit": "dp"
+    }
+  },
+  "summary": {
+    "score": 100,
+    "checks": {
+      "passed": 127,
+      "total": 127
+    },
+    "components": {
+      "total": 29,
+      "pass": 29,
+      "warn": 0,
+      "fail": 0
+    },
+    "flows": {
+      "total": 7,
+      "parity": 7,
+      "ios": 7,
+      "android": 7
+    }
+  },
+  "videos": {
+    "ios": "ios/walkthrough.mp4",
+    "android": "android/walkthrough.mp4"
+  },
+  "artifacts": {
+    "ios": "ios/EvinovaApp-simulator.zip",
+    "android": "android/Evinova-debug.apk"
+  },
+  "screens": [
+    {
+      "id": "home",
+      "name": "Today",
+      "ios": "ios/screens/home.png",
+      "android": "android/screens/home.png"
+    },
+    {
+      "id": "browse",
+      "name": "Activities",
+      "ios": "ios/screens/browse.png",
+      "android": "android/screens/browse.png"
+    },
+    {
+      "id": "detail",
+      "name": "Detail",
+      "ios": "ios/screens/detail.png",
+      "android": "android/screens/detail.png"
+    },
+    {
+      "id": "detail_confirmed",
+      "name": "Confirmation",
+      "ios": "ios/screens/detail_confirmed.png",
+      "android": "android/screens/detail_confirmed.png"
+    },
+    {
+      "id": "account",
+      "name": "Profile",
+      "ios": "ios/screens/account.png",
+      "android": "android/screens/account.png"
+    }
+  ],
+  "components": [
+    {
+      "id": "home.topbar",
+      "kind": "TopBar",
+      "screen": "home",
+      "label": "Evinova",
+      "status": "pass",
+      "checks": {
+        "present": {
+          "ios": true,
+          "android": true,
+          "ok": true
+        },
+        "label": {
+          "ios": "Evinova",
+          "android": "Evinova",
+          "expected": "Evinova",
+          "ok": true
+        },
+        "role": {
+          "ios": "static",
+          "android": "static",
+          "expected": "static",
+          "ok": true
+        },
+        "geometry": {
+          "ios": {
+            "w": 402,
+            "h": 56,
+            "unit": "pt"
+          },
+          "android": {
+            "w": 362,
+            "h": 56,
+            "unit": "dp"
+          },
+          "delta": 10,
+          "ok": true
+        }
+      },
+      "images": {
+        "ios": "ios/components/home.topbar.png",
+        "android": "android/components/home.topbar.png"
+      }
+    },
+    {
+      "id": "home.hero",
+      "kind": "HeroBanner",
+      "screen": "home",
+      "label": "Your Week 6 diary is ready",
+      "status": "pass",
+      "checks": {
+        "present": {
+          "ios": true,
+          "android": true,
+          "ok": true
+        },
+        "label": {
+          "ios": "Your Week 6 diary is ready",
+          "android": "Your Week 6 diary is ready",
+          "expected": "Your Week 6 diary is ready",
+          "ok": true
+        },
+        "role": {
+          "ios": "static",
+          "android": "static",
+          "expected": "static",
+          "ok": true
+        },
+        "geometry": {
+          "ios": {
+            "w": 362,
+            "h": 177,
+            "unit": "pt"
+          },
+          "android": {
+            "w": 326,
+            "h": 139,
+            "unit": "dp"
+          },
+          "delta": 9,
+          "ok": true
+        }
+      },
+      "images": {
+        "ios": "ios/components/home.hero.png",
+        "android": "android/components/home.hero.png"
+      }
+    },
+    {
+      "id": "home.hero.cta",
+      "kind": "PrimaryButton",
+      "screen": "home",
+      "label": "Start diary",
+      "status": "pass",
+      "checks": {
+        "present": {
+          "ios": true,
+          "android": true,
+          "ok": true
+        },
+        "label": {
+          "ios": "Start diary",
+          "android": "Start diary",
+          "expected": "Start diary",
+          "ok": true
+        },
+        "role": {
+          "ios": "interactive",
+          "android": "interactive",
+          "expected": "interactive",
+          "ok": true
+        },
+        "geometry": {
+          "ios": {
+            "w": 112,
+            "h": 40,
+            "unit": "pt"
+          },
+          "android": {
+            "w": 106,
+            "h": 40,
+            "unit": "dp"
+          },
+          "delta": 1.5,
+          "ok": true
+        }
+      },
+      "images": {
+        "ios": "ios/components/home.hero.cta.png",
+        "android": "android/components/home.hero.cta.png"
+      }
+    },
+    {
+      "id": "home.stat.0",
+      "kind": "StatTile",
+      "screen": "home",
+      "label": "Diary streak: 12 days",
+      "status": "pass",
+      "checks": {
+        "present": {
+          "ios": true,
+          "android": true,
+          "ok": true
+        },
+        "label": {
+          "ios": "Diary streak: 12 days",
+          "android": "Diary streak: 12 days",
+          "expected": "Diary streak: 12 days",
+          "ok": true
+        },
+        "role": {
+          "ios": "static",
+          "android": "static",
+          "expected": "static",
+          "ok": true
+        },
+        "geometry": {
+          "ios": {
+            "w": 175,
+            "h": 64,
+            "unit": "pt"
+          },
+          "android": {
+            "w": 151,
+            "h": 40,
+            "unit": "dp"
+          },
+          "delta": 6,
+          "ok": true
+        }
+      },
+      "images": {
+        "ios": "ios/components/home.stat.0.png",
+        "android": "android/components/home.stat.0.png"
+      }
+    },
+    {
+      "id": "home.stat.1",
+      "kind": "StatTile",
+      "screen": "home",
+      "label": "Next visit: Thu 9:30",
+      "status": "pass",
+      "checks": {
+        "present": {
+          "ios": true,
+          "android": true,
+          "ok": true
+        },
+        "label": {
+          "ios": "Next visit: Thu 9:30",
+          "android": "Next visit: Thu 9:30",
+          "expected": "Next visit: Thu 9:30",
+          "ok": true
+        },
+        "role": {
+          "ios": "static",
+          "android": "static",
+          "expected": "static",
+          "ok": true
+        },
+        "geometry": {
+          "ios": {
+            "w": 175,
+            "h": 64,
+            "unit": "pt"
+          },
+          "android": {
+            "w": 151,
+            "h": 40,
+            "unit": "dp"
+          },
+          "delta": 6,
+          "ok": true
+        }
+      },
+      "images": {
+        "ios": "ios/components/home.stat.1.png",
+        "android": "android/components/home.stat.1.png"
+      }
+    },
+    {
+      "id": "home.section",
+      "kind": "SectionHeader",
+      "screen": "home",
+      "label": "Up next",
+      "status": "pass",
+      "checks": {
+        "present": {
+          "ios": true,
+          "android": true,
+          "ok": true
+        },
+        "label": {
+          "ios": "Up next",
+          "android": "Up next",
+          "expected": "Up next",
+          "ok": true
+        },
+        "role": {
+          "ios": "static",
+          "android": "static",
+          "expected": "static",
+          "ok": true
+        },
+        "geometry": {
+          "ios": {
+            "w": 402,
+            "h": 28,
+            "unit": "pt"
+          },
+          "android": {
+            "w": 362,
+            "h": 20,
+            "unit": "dp"
+          },
+          "delta": 10,
+          "ok": true
+        }
+      },
+      "images": {
+        "ios": "ios/components/home.section.png",
+        "android": "android/components/home.section.png"
+      }
+    },
+    {
+      "id": "home.card.0",
+      "kind": "ItemCard",
+      "screen": "home",
+      "label": "Daily symptom diary",
+      "status": "pass",
+      "checks": {
+        "present": {
+          "ios": true,
+          "android": true,
+          "ok": true
+        },
+        "label": {
+          "ios": "Daily symptom diary",
+          "android": "Daily symptom diary",
+          "expected": "Daily symptom diary",
+          "ok": true
+        },
+        "role": {
+          "ios": "interactive",
+          "android": "interactive",
+          "expected": "interactive",
+          "ok": true
+        },
+        "geometry": {
+          "ios": {
+            "w": 362,
+            "h": 72,
+            "unit": "pt"
+          },
+          "android": {
+            "w": 362,
+            "h": 72,
+            "unit": "dp"
+          },
+          "delta": 0,
+          "ok": true
+        }
+      },
+      "images": {
+        "ios": "ios/components/home.card.0.png",
+        "android": "android/components/home.card.0.png"
+      }
+    },
+    {
+      "id": "home.card.1",
+      "kind": "ItemCard",
+      "screen": "home",
+      "label": "Week 6 site visit",
+      "status": "pass",
+      "checks": {
+        "present": {
+          "ios": true,
+          "android": true,
+          "ok": true
+        },
+        "label": {
+          "ios": "Week 6 site visit",
+          "android": "Week 6 site visit",
+          "expected": "Week 6 site visit",
+          "ok": true
+        },
+        "role": {
+          "ios": "interactive",
+          "android": "interactive",
+          "expected": "interactive",
+          "ok": true
+        },
+        "geometry": {
+          "ios": {
+            "w": 362,
+            "h": 72,
+            "unit": "pt"
+          },
+          "android": {
+            "w": 362,
+            "h": 72,
+            "unit": "dp"
+          },
+          "delta": 0,
+          "ok": true
+        }
+      },
+      "images": {
+        "ios": "ios/components/home.card.1.png",
+        "android": "android/components/home.card.1.png"
+      }
+    },
+    {
+      "id": "tab.home",
+      "kind": "TabItem",
+      "screen": "home",
+      "label": "Today",
+      "status": "pass",
+      "checks": {
+        "present": {
+          "ios": true,
+          "android": true,
+          "ok": true
+        },
+        "label": {
+          "ios": "Today",
+          "android": "Today",
+          "expected": "Today",
+          "ok": true
+        },
+        "role": {
+          "ios": "interactive",
+          "android": "interactive",
+          "expected": "interactive",
+          "ok": true
+        },
+        "geometry": {
+          "ios": {
+            "w": 129,
+            "h": 56,
+            "unit": "pt"
+          },
+          "android": {
+            "w": 134,
+            "h": 56,
+            "unit": "dp"
+          },
+          "delta": 1.3,
+          "ok": true
+        }
+      },
+      "images": {
+        "ios": "ios/components/tab.home.png",
+        "android": "android/components/tab.home.png"
+      }
+    },
+    {
+      "id": "tab.browse",
+      "kind": "TabItem",
+      "screen": "home",
+      "label": "Activities",
+      "status": "pass",
+      "checks": {
+        "present": {
+          "ios": true,
+          "android": true,
+          "ok": true
+        },
+        "label": {
+          "ios": "Activities",
+          "android": "Activities",
+          "expected": "Activities",
+          "ok": true
+        },
+        "role": {
+          "ios": "interactive",
+          "android": "interactive",
+          "expected": "interactive",
+          "ok": true
+        },
+        "geometry": {
+          "ios": {
+            "w": 129,
+            "h": 56,
+            "unit": "pt"
+          },
+          "android": {
+            "w": 134,
+            "h": 56,
+            "unit": "dp"
+          },
+          "delta": 1.3,
+          "ok": true
+        }
+      },
+      "images": {
+        "ios": "ios/components/tab.browse.png",
+        "android": "android/components/tab.browse.png"
+      }
+    },
+    {
+      "id": "tab.account",
+      "kind": "TabItem",
+      "screen": "home",
+      "label": "Profile",
+      "status": "pass",
+      "checks": {
+        "present": {
+          "ios": true,
+          "android": true,
+          "ok": true
+        },
+        "label": {
+          "ios": "Profile",
+          "android": "Profile",
+          "expected": "Profile",
+          "ok": true
+        },
+        "role": {
+          "ios": "interactive",
+          "android": "interactive",
+          "expected": "interactive",
+          "ok": true
+        },
+        "geometry": {
+          "ios": {
+            "w": 129,
+            "h": 56,
+            "unit": "pt"
+          },
+          "android": {
+            "w": 134,
+            "h": 56,
+            "unit": "dp"
+          },
+          "delta": 1.3,
+          "ok": true
+        }
+      },
+      "images": {
+        "ios": "ios/components/tab.account.png",
+        "android": "android/components/tab.account.png"
+      }
+    },
+    {
+      "id": "browse.search",
+      "kind": "SearchField",
+      "screen": "browse",
+      "label": "Search activities",
+      "status": "pass",
+      "checks": {
+        "present": {
+          "ios": true,
+          "android": true,
+          "ok": true
+        },
+        "label": {
+          "ios": "Search activities",
+          "android": "Search activities",
+          "expected": "Search activities",
+          "ok": true
+        },
+        "role": {
+          "ios": "input",
+          "android": "input",
+          "expected": "input",
+          "ok": true
+        },
+        "geometry": {
+          "ios": {
+            "w": 306,
+            "h": 22,
+            "unit": "pt"
+          },
+          "android": {
+            "w": 308,
+            "h": 18,
+            "unit": "dp"
+          },
+          "delta": 0.6,
+          "ok": true
+        }
+      },
+      "images": {
+        "ios": "ios/components/browse.search.png",
+        "android": "android/components/browse.search.png"
+      }
+    },
+    {
+      "id": "browse.row.0",
+      "kind": "ListRow",
+      "screen": "browse",
+      "label": "Daily symptom diary",
+      "status": "pass",
+      "checks": {
+        "present": {
+          "ios": true,
+          "android": true,
+          "ok": true
+        },
+        "label": {
+          "ios": "Daily symptom diary",
+          "android": "Daily symptom diary",
+          "expected": "Daily symptom diary",
+          "ok": true
+        },
+        "role": {
+          "ios": "interactive",
+          "android": "interactive",
+          "expected": "interactive",
+          "ok": true
+        },
+        "geometry": {
+          "ios": {
+            "w": 362,
+            "h": 64,
+            "unit": "pt"
+          },
+          "android": {
+            "w": 362,
+            "h": 64,
+            "unit": "dp"
+          },
+          "delta": 0,
+          "ok": true
+        }
+      },
+      "images": {
+        "ios": "ios/components/browse.row.0.png",
+        "android": "android/components/browse.row.0.png"
+      }
+    },
+    {
+      "id": "browse.row.1",
+      "kind": "ListRow",
+      "screen": "browse",
+      "label": "Week 6 site visit",
+      "status": "pass",
+      "checks": {
+        "present": {
+          "ios": true,
+          "android": true,
+          "ok": true
+        },
+        "label": {
+          "ios": "Week 6 site visit",
+          "android": "Week 6 site visit",
+          "expected": "Week 6 site visit",
+          "ok": true
+        },
+        "role": {
+          "ios": "interactive",
+          "android": "interactive",
+          "expected": "interactive",
+          "ok": true
+        },
+        "geometry": {
+          "ios": {
+            "w": 362,
+            "h": 64,
+            "unit": "pt"
+          },
+          "android": {
+            "w": 362,
+            "h": 64,
+            "unit": "dp"
+          },
+          "delta": 0,
+          "ok": true
+        }
+      },
+      "images": {
+        "ios": "ios/components/browse.row.1.png",
+        "android": "android/components/browse.row.1.png"
+      }
+    },
+    {
+      "id": "browse.row.2",
+      "kind": "ListRow",
+      "screen": "browse",
+      "label": "Wearable sync",
+      "status": "pass",
+      "checks": {
+        "present": {
+          "ios": true,
+          "android": true,
+          "ok": true
+        },
+        "label": {
+          "ios": "Wearable sync",
+          "android": "Wearable sync",
+          "expected": "Wearable sync",
+          "ok": true
+        },
+        "role": {
+          "ios": "interactive",
+          "android": "interactive",
+          "expected": "interactive",
+          "ok": true
+        },
+        "geometry": {
+          "ios": {
+            "w": 362,
+            "h": 64,
+            "unit": "pt"
+          },
+          "android": {
+            "w": 362,
+            "h": 64,
+            "unit": "dp"
+          },
+          "delta": 0,
+          "ok": true
+        }
+      },
+      "images": {
+        "ios": "ios/components/browse.row.2.png",
+        "android": "android/components/browse.row.2.png"
+      }
+    },
+    {
+      "id": "browse.row.3",
+      "kind": "ListRow",
+      "screen": "browse",
+      "label": "Message from Dr. Patel",
+      "status": "pass",
+      "checks": {
+        "present": {
+          "ios": true,
+          "android": true,
+          "ok": true
+        },
+        "label": {
+          "ios": "Message from Dr. Patel",
+          "android": "Message from Dr. Patel",
+          "expected": "Message from Dr. Patel",
+          "ok": true
+        },
+        "role": {
+          "ios": "interactive",
+          "android": "interactive",
+          "expected": "interactive",
+          "ok": true
+        },
+        "geometry": {
+          "ios": {
+            "w": 362,
+            "h": 64,
+            "unit": "pt"
+          },
+          "android": {
+            "w": 362,
+            "h": 64,
+            "unit": "dp"
+          },
+          "delta": 0,
+          "ok": true
+        }
+      },
+      "images": {
+        "ios": "ios/components/browse.row.3.png",
+        "android": "android/components/browse.row.3.png"
+      }
+    },
+    {
+      "id": "detail.header",
+      "kind": "DetailHeader",
+      "screen": "detail",
+      "label": "Daily symptom diary",
+      "status": "pass",
+      "checks": {
+        "present": {
+          "ios": true,
+          "android": true,
+          "ok": true
+        },
+        "label": {
+          "ios": "Daily symptom diary",
+          "android": "Daily symptom diary",
+          "expected": "Daily symptom diary",
+          "ok": true
+        },
+        "role": {
+          "ios": "static",
+          "android": "static",
+          "expected": "static",
+          "ok": true
+        },
+        "geometry": {
+          "ios": {
+            "w": 402,
+            "h": 169,
+            "unit": "pt"
+          },
+          "android": {
+            "w": 362,
+            "h": 168,
+            "unit": "dp"
+          },
+          "delta": 10,
+          "ok": true
+        }
+      },
+      "images": {
+        "ios": "ios/components/detail.header.png",
+        "android": "android/components/detail.header.png"
+      }
+    },
+    {
+      "id": "detail.value",
+      "kind": "ValuePill",
+      "screen": "detail",
+      "label": "Due today",
+      "status": "pass",
+      "checks": {
+        "present": {
+          "ios": true,
+          "android": true,
+          "ok": true
+        },
+        "label": {
+          "ios": "Due today",
+          "android": "Due today",
+          "expected": "Due today",
+          "ok": true
+        },
+        "role": {
+          "ios": "static",
+          "android": "static",
+          "expected": "static",
+          "ok": true
+        },
+        "geometry": {
+          "ios": {
+            "w": 102,
+            "h": 32,
+            "unit": "pt"
+          },
+          "android": {
+            "w": 67,
+            "h": 32,
+            "unit": "dp"
+          },
+          "delta": 8.8,
+          "ok": true
+        }
+      },
+      "images": {
+        "ios": "ios/components/detail.value.png",
+        "android": "android/components/detail.value.png"
+      }
+    },
+    {
+      "id": "detail.options",
+      "kind": "SectionHeader",
+      "screen": "detail",
+      "label": "How are you feeling today?",
+      "status": "pass",
+      "checks": {
+        "present": {
+          "ios": true,
+          "android": true,
+          "ok": true
+        },
+        "label": {
+          "ios": "How are you feeling today?",
+          "android": "How are you feeling today?",
+          "expected": "How are you feeling today?",
+          "ok": true
+        },
+        "role": {
+          "ios": "static",
+          "android": "static",
+          "expected": "static",
+          "ok": true
+        },
+        "geometry": {
+          "ios": {
+            "w": 402,
+            "h": 28,
+            "unit": "pt"
+          },
+          "android": {
+            "w": 362,
+            "h": 20,
+            "unit": "dp"
+          },
+          "delta": 10,
+          "ok": true
+        }
+      },
+      "images": {
+        "ios": "ios/components/detail.options.png",
+        "android": "android/components/detail.options.png"
+      }
+    },
+    {
+      "id": "detail.option.0",
+      "kind": "Chip",
+      "screen": "detail",
+      "label": "Better",
+      "status": "pass",
+      "checks": {
+        "present": {
+          "ios": true,
+          "android": true,
+          "ok": true
+        },
+        "label": {
+          "ios": "Better",
+          "android": "Better",
+          "expected": "Better",
+          "ok": true
+        },
+        "role": {
+          "ios": "interactive",
+          "android": "interactive",
+          "expected": "interactive",
+          "ok": true
+        },
+        "geometry": {
+          "ios": {
+            "w": 114,
+            "h": 44,
+            "unit": "pt"
+          },
+          "android": {
+            "w": 114,
+            "h": 44,
+            "unit": "dp"
+          },
+          "delta": 0,
+          "ok": true
+        },
+        "value": {
+          "ios": "selected",
+          "android": "selected",
+          "expected": null,
+          "ok": true
+        }
+      },
+      "images": {
+        "ios": "ios/components/detail.option.0.png",
+        "android": "android/components/detail.option.0.png"
+      }
+    },
+    {
+      "id": "detail.option.1",
+      "kind": "Chip",
+      "screen": "detail",
+      "label": "Same",
+      "status": "pass",
+      "checks": {
+        "present": {
+          "ios": true,
+          "android": true,
+          "ok": true
+        },
+        "label": {
+          "ios": "Same",
+          "android": "Same",
+          "expected": "Same",
+          "ok": true
+        },
+        "role": {
+          "ios": "interactive",
+          "android": "interactive",
+          "expected": "interactive",
+          "ok": true
+        },
+        "geometry": {
+          "ios": {
+            "w": 115,
+            "h": 45,
+            "unit": "pt"
+          },
+          "android": {
+            "w": 114,
+            "h": 44,
+            "unit": "dp"
+          },
+          "delta": 0.2,
+          "ok": true
+        },
+        "value": {
+          "ios": "unselected",
+          "android": "unselected",
+          "expected": null,
+          "ok": true
+        }
+      },
+      "images": {
+        "ios": "ios/components/detail.option.1.png",
+        "android": "android/components/detail.option.1.png"
+      }
+    },
+    {
+      "id": "detail.option.2",
+      "kind": "Chip",
+      "screen": "detail",
+      "label": "Worse",
+      "status": "pass",
+      "checks": {
+        "present": {
+          "ios": true,
+          "android": true,
+          "ok": true
+        },
+        "label": {
+          "ios": "Worse",
+          "android": "Worse",
+          "expected": "Worse",
+          "ok": true
+        },
+        "role": {
+          "ios": "interactive",
+          "android": "interactive",
+          "expected": "interactive",
+          "ok": true
+        },
+        "geometry": {
+          "ios": {
+            "w": 115,
+            "h": 45,
+            "unit": "pt"
+          },
+          "android": {
+            "w": 114,
+            "h": 44,
+            "unit": "dp"
+          },
+          "delta": 0.2,
+          "ok": true
+        },
+        "value": {
+          "ios": "unselected",
+          "android": "unselected",
+          "expected": null,
+          "ok": true
+        }
+      },
+      "images": {
+        "ios": "ios/components/detail.option.2.png",
+        "android": "android/components/detail.option.2.png"
+      }
+    },
+    {
+      "id": "detail.primary",
+      "kind": "PrimaryButton",
+      "screen": "detail",
+      "label": "Submit entry",
+      "status": "pass",
+      "checks": {
+        "present": {
+          "ios": true,
+          "android": true,
+          "ok": true
+        },
+        "label": {
+          "ios": "Submit entry",
+          "android": "Submit entry",
+          "expected": "Submit entry",
+          "ok": true
+        },
+        "role": {
+          "ios": "interactive",
+          "android": "interactive",
+          "expected": "interactive",
+          "ok": true
+        },
+        "geometry": {
+          "ios": {
+            "w": 362,
+            "h": 52,
+            "unit": "pt"
+          },
+          "android": {
+            "w": 362,
+            "h": 52,
+            "unit": "dp"
+          },
+          "delta": 0,
+          "ok": true
+        }
+      },
+      "images": {
+        "ios": "ios/components/detail.primary.png",
+        "android": "android/components/detail.primary.png"
+      }
+    },
+    {
+      "id": "detail.confirmation",
+      "kind": "ConfirmationBanner",
+      "screen": "detail_confirmed",
+      "label": "Entry sent to your site team",
+      "status": "pass",
+      "checks": {
+        "present": {
+          "ios": true,
+          "android": true,
+          "ok": true
+        },
+        "label": {
+          "ios": "Entry sent to your site team",
+          "android": "Entry sent to your site team",
+          "expected": "Entry sent to your site team",
+          "ok": true
+        },
+        "role": {
+          "ios": "static",
+          "android": "static",
+          "expected": "static",
+          "ok": true
+        },
+        "geometry": {
+          "ios": {
+            "w": 362,
+            "h": 52,
+            "unit": "pt"
+          },
+          "android": {
+            "w": 330,
+            "h": 52,
+            "unit": "dp"
+          },
+          "delta": 8,
+          "ok": true
+        }
+      },
+      "images": {
+        "ios": "ios/components/detail.confirmation.png",
+        "android": "android/components/detail.confirmation.png"
+      }
+    },
+    {
+      "id": "account.profile",
+      "kind": "ProfileHeader",
+      "screen": "account",
+      "label": "Maya Thompson",
+      "status": "pass",
+      "checks": {
+        "present": {
+          "ios": true,
+          "android": true,
+          "ok": true
+        },
+        "label": {
+          "ios": "Maya Thompson",
+          "android": "Maya Thompson",
+          "expected": "Maya Thompson",
+          "ok": true
+        },
+        "role": {
+          "ios": "static",
+          "android": "static",
+          "expected": "static",
+          "ok": true
+        },
+        "geometry": {
+          "ios": {
+            "w": 362,
+            "h": 96,
+            "unit": "pt"
+          },
+          "android": {
+            "w": 330,
+            "h": 64,
+            "unit": "dp"
+          },
+          "delta": 8,
+          "ok": true
+        }
+      },
+      "images": {
+        "ios": "ios/components/account.profile.png",
+        "android": "android/components/account.profile.png"
+      }
+    },
+    {
+      "id": "account.row.0",
+      "kind": "SettingsRow",
+      "screen": "account",
+      "label": "My study",
+      "status": "pass",
+      "checks": {
+        "present": {
+          "ios": true,
+          "android": true,
+          "ok": true
+        },
+        "label": {
+          "ios": "My study",
+          "android": "My study",
+          "expected": "My study",
+          "ok": true
+        },
+        "role": {
+          "ios": "interactive",
+          "android": "interactive",
+          "expected": "interactive",
+          "ok": true
+        },
+        "geometry": {
+          "ios": {
+            "w": 362,
+            "h": 52,
+            "unit": "pt"
+          },
+          "android": {
+            "w": 362,
+            "h": 52,
+            "unit": "dp"
+          },
+          "delta": 0,
+          "ok": true
+        }
+      },
+      "images": {
+        "ios": "ios/components/account.row.0.png",
+        "android": "android/components/account.row.0.png"
+      }
+    },
+    {
+      "id": "account.row.1",
+      "kind": "SettingsRow",
+      "screen": "account",
+      "label": "Consent documents",
+      "status": "pass",
+      "checks": {
+        "present": {
+          "ios": true,
+          "android": true,
+          "ok": true
+        },
+        "label": {
+          "ios": "Consent documents",
+          "android": "Consent documents",
+          "expected": "Consent documents",
+          "ok": true
+        },
+        "role": {
+          "ios": "interactive",
+          "android": "interactive",
+          "expected": "interactive",
+          "ok": true
+        },
+        "geometry": {
+          "ios": {
+            "w": 362,
+            "h": 52,
+            "unit": "pt"
+          },
+          "android": {
+            "w": 362,
+            "h": 52,
+            "unit": "dp"
+          },
+          "delta": 0,
+          "ok": true
+        }
+      },
+      "images": {
+        "ios": "ios/components/account.row.1.png",
+        "android": "android/components/account.row.1.png"
+      }
+    },
+    {
+      "id": "account.row.2",
+      "kind": "SettingsRow",
+      "screen": "account",
+      "label": "Contact site team",
+      "status": "pass",
+      "checks": {
+        "present": {
+          "ios": true,
+          "android": true,
+          "ok": true
+        },
+        "label": {
+          "ios": "Contact site team",
+          "android": "Contact site team",
+          "expected": "Contact site team",
+          "ok": true
+        },
+        "role": {
+          "ios": "interactive",
+          "android": "interactive",
+          "expected": "interactive",
+          "ok": true
+        },
+        "geometry": {
+          "ios": {
+            "w": 362,
+            "h": 52,
+            "unit": "pt"
+          },
+          "android": {
+            "w": 362,
+            "h": 52,
+            "unit": "dp"
+          },
+          "delta": 0,
+          "ok": true
+        }
+      },
+      "images": {
+        "ios": "ios/components/account.row.2.png",
+        "android": "android/components/account.row.2.png"
+      }
+    },
+    {
+      "id": "account.toggle",
+      "kind": "ToggleRow",
+      "screen": "account",
+      "label": "Medication reminders",
+      "status": "pass",
+      "checks": {
+        "present": {
+          "ios": true,
+          "android": true,
+          "ok": true
+        },
+        "label": {
+          "ios": "Medication reminders",
+          "android": "Medication reminders",
+          "expected": "Medication reminders",
+          "ok": true
+        },
+        "role": {
+          "ios": "interactive",
+          "android": "interactive",
+          "expected": "interactive",
+          "ok": true
+        },
+        "geometry": {
+          "ios": {
+            "w": 362,
+            "h": 56,
+            "unit": "pt"
+          },
+          "android": {
+            "w": 362,
+            "h": 56,
+            "unit": "dp"
+          },
+          "delta": 0,
+          "ok": true
+        },
+        "value": {
+          "ios": "off",
+          "android": "off",
+          "expected": null,
+          "ok": true
+        }
+      },
+      "images": {
+        "ios": "ios/components/account.toggle.png",
+        "android": "android/components/account.toggle.png"
+      }
+    }
+  ],
+  "flows": [
+    {
+      "id": "hero-cta",
+      "name": "\"Start diary\" opens Activities",
+      "steps": [
+        {
+          "action": "tap",
+          "target": "home.hero.cta",
+          "expected": null,
+          "ios": {
+            "ok": true,
+            "detail": "tapped home.hero.cta"
+          },
+          "android": {
+            "ok": true,
+            "detail": "tapped home.hero.cta"
+          }
+        },
+        {
+          "action": "expectExists",
+          "target": "browse.search",
+          "expected": null,
+          "ios": {
+            "ok": true,
+            "detail": "browse.search shown"
+          },
+          "android": {
+            "ok": true,
+            "detail": "browse.search shown"
+          }
+        }
+      ],
+      "ios": true,
+      "android": true,
+      "status": "pass"
+    },
+    {
+      "id": "open-detail",
+      "name": "Open \"Daily symptom diary\"",
+      "steps": [
+        {
+          "action": "tap",
+          "target": "tab.browse",
+          "expected": null,
+          "ios": {
+            "ok": true,
+            "detail": "tapped tab.browse"
+          },
+          "android": {
+            "ok": true,
+            "detail": "tapped tab.browse"
+          }
+        },
+        {
+          "action": "tap",
+          "target": "browse.row.0",
+          "expected": null,
+          "ios": {
+            "ok": true,
+            "detail": "tapped browse.row.0"
+          },
+          "android": {
+            "ok": true,
+            "detail": "tapped browse.row.0"
+          }
+        },
+        {
+          "action": "expectLabel",
+          "target": "detail.header",
+          "expected": "Daily symptom diary",
+          "ios": {
+            "ok": true,
+            "detail": "label \"Daily symptom diary\" (expected \"Daily symptom diary\")"
+          },
+          "android": {
+            "ok": true,
+            "detail": "label \"Daily symptom diary\" (expected \"Daily symptom diary\")"
+          }
+        }
+      ],
+      "ios": true,
+      "android": true,
+      "status": "pass"
+    },
+    {
+      "id": "select-option",
+      "name": "Choose \"Same\"",
+      "steps": [
+        {
+          "action": "tap",
+          "target": "tab.browse",
+          "expected": null,
+          "ios": {
+            "ok": true,
+            "detail": "tapped tab.browse"
+          },
+          "android": {
+            "ok": true,
+            "detail": "tapped tab.browse"
+          }
+        },
+        {
+          "action": "tap",
+          "target": "browse.row.0",
+          "expected": null,
+          "ios": {
+            "ok": true,
+            "detail": "tapped browse.row.0"
+          },
+          "android": {
+            "ok": true,
+            "detail": "tapped browse.row.0"
+          }
+        },
+        {
+          "action": "tap",
+          "target": "detail.option.1",
+          "expected": null,
+          "ios": {
+            "ok": true,
+            "detail": "tapped detail.option.1"
+          },
+          "android": {
+            "ok": true,
+            "detail": "tapped detail.option.1"
+          }
+        },
+        {
+          "action": "expectValue",
+          "target": "detail.option.1",
+          "expected": "selected",
+          "ios": {
+            "ok": true,
+            "detail": "value \"selected\" (expected \"selected\")"
+          },
+          "android": {
+            "ok": true,
+            "detail": "value \"selected\" (expected \"selected\")"
+          }
+        },
+        {
+          "action": "expectValue",
+          "target": "detail.option.0",
+          "expected": "unselected",
+          "ios": {
+            "ok": true,
+            "detail": "value \"unselected\" (expected \"unselected\")"
+          },
+          "android": {
+            "ok": true,
+            "detail": "value \"unselected\" (expected \"unselected\")"
+          }
+        }
+      ],
+      "ios": true,
+      "android": true,
+      "status": "pass"
+    },
+    {
+      "id": "primary-action",
+      "name": "\"Submit entry\" confirms",
+      "steps": [
+        {
+          "action": "tap",
+          "target": "tab.browse",
+          "expected": null,
+          "ios": {
+            "ok": true,
+            "detail": "tapped tab.browse"
+          },
+          "android": {
+            "ok": true,
+            "detail": "tapped tab.browse"
+          }
+        },
+        {
+          "action": "tap",
+          "target": "browse.row.0",
+          "expected": null,
+          "ios": {
+            "ok": true,
+            "detail": "tapped browse.row.0"
+          },
+          "android": {
+            "ok": true,
+            "detail": "tapped browse.row.0"
+          }
+        },
+        {
+          "action": "tap",
+          "target": "detail.primary",
+          "expected": null,
+          "ios": {
+            "ok": true,
+            "detail": "tapped detail.primary"
+          },
+          "android": {
+            "ok": true,
+            "detail": "tapped detail.primary"
+          }
+        },
+        {
+          "action": "expectLabel",
+          "target": "detail.confirmation",
+          "expected": "Entry sent to your site team",
+          "ios": {
+            "ok": true,
+            "detail": "label \"Entry sent to your site team\" (expected \"Entry sent to your site team\")"
+          },
+          "android": {
+            "ok": true,
+            "detail": "label \"Entry sent to your site team\" (expected \"Entry sent to your site team\")"
+          }
+        }
+      ],
+      "ios": true,
+      "android": true,
+      "status": "pass"
+    },
+    {
+      "id": "search-filter",
+      "name": "Search \"Wearable\" filters the list",
+      "steps": [
+        {
+          "action": "tap",
+          "target": "tab.browse",
+          "expected": null,
+          "ios": {
+            "ok": true,
+            "detail": "tapped tab.browse"
+          },
+          "android": {
+            "ok": true,
+            "detail": "tapped tab.browse"
+          }
+        },
+        {
+          "action": "type",
+          "target": "browse.search",
+          "expected": "Wearable",
+          "ios": {
+            "ok": true,
+            "detail": "typed \"Wearable\""
+          },
+          "android": {
+            "ok": true,
+            "detail": "typed \"Wearable\""
+          }
+        },
+        {
+          "action": "expectExists",
+          "target": "browse.row.2",
+          "expected": null,
+          "ios": {
+            "ok": true,
+            "detail": "browse.row.2 shown"
+          },
+          "android": {
+            "ok": true,
+            "detail": "browse.row.2 shown"
+          }
+        },
+        {
+          "action": "expectMissing",
+          "target": "browse.row.0",
+          "expected": null,
+          "ios": {
+            "ok": true,
+            "detail": "browse.row.0 hidden"
+          },
+          "android": {
+            "ok": true,
+            "detail": "browse.row.0 hidden"
+          }
+        }
+      ],
+      "ios": true,
+      "android": true,
+      "status": "pass"
+    },
+    {
+      "id": "toggle",
+      "name": "Turn on \"Medication reminders\"",
+      "steps": [
+        {
+          "action": "tap",
+          "target": "tab.account",
+          "expected": null,
+          "ios": {
+            "ok": true,
+            "detail": "tapped tab.account"
+          },
+          "android": {
+            "ok": true,
+            "detail": "tapped tab.account"
+          }
+        },
+        {
+          "action": "tap",
+          "target": "account.toggle",
+          "expected": null,
+          "ios": {
+            "ok": true,
+            "detail": "tapped account.toggle"
+          },
+          "android": {
+            "ok": true,
+            "detail": "tapped account.toggle"
+          }
+        },
+        {
+          "action": "expectValue",
+          "target": "account.toggle",
+          "expected": "on",
+          "ios": {
+            "ok": true,
+            "detail": "value \"on\" (expected \"on\")"
+          },
+          "android": {
+            "ok": true,
+            "detail": "value \"on\" (expected \"on\")"
+          }
+        }
+      ],
+      "ios": true,
+      "android": true,
+      "status": "pass"
+    },
+    {
+      "id": "tab-nav",
+      "name": "Tab bar navigation",
+      "steps": [
+        {
+          "action": "tap",
+          "target": "tab.account",
+          "expected": null,
+          "ios": {
+            "ok": true,
+            "detail": "tapped tab.account"
+          },
+          "android": {
+            "ok": true,
+            "detail": "tapped tab.account"
+          }
+        },
+        {
+          "action": "expectExists",
+          "target": "account.profile",
+          "expected": null,
+          "ios": {
+            "ok": true,
+            "detail": "account.profile shown"
+          },
+          "android": {
+            "ok": true,
+            "detail": "account.profile shown"
+          }
+        },
+        {
+          "action": "tap",
+          "target": "tab.home",
+          "expected": null,
+          "ios": {
+            "ok": true,
+            "detail": "tapped tab.home"
+          },
+          "android": {
+            "ok": true,
+            "detail": "tapped tab.home"
+          }
+        },
+        {
+          "action": "expectExists",
+          "target": "home.hero",
+          "expected": null,
+          "ios": {
+            "ok": true,
+            "detail": "home.hero shown"
+          },
+          "android": {
+            "ok": true,
+            "detail": "home.hero shown"
+          }
+        }
+      ],
+      "ios": true,
+      "android": true,
+      "status": "pass"
+    }
+  ]
+}

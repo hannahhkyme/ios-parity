@@ -1,0 +1,11 @@
+node_modules/
+.DS_Store
+customers/*/ios/build/
+customers/*/ios/*.xcodeproj/
+customers/*/android/.gradle/
+customers/*/android/build/
+customers/*/android/app/build/
+customers/*/android/local.properties
+customers/*/run.log
+customers/*/evidence/*/frames/
+customers/*/evidence/*/*.log

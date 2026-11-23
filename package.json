@@ -1,0 +1,16 @@
+{
+  "name": "parity-studio",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Paste a company, get a native iOS app + Android twin, screen recordings and a component-by-component parity dashboard.",
+  "bin": { "parity": "cli/parity.mjs" },
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "parity": "node cli/parity.mjs",
+    "test": "node --test test/*.test.mjs",
+    "dashboard": "npm --prefix dashboard run dev",
+    "dashboard:build": "npm --prefix dashboard run build",
+    "postinstall": "npm --prefix dashboard install --no-audit --no-fund"
+  }
+}
