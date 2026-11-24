@@ -49,3 +49,13 @@ test("Innodata gets branded solution content without overriding an explicit indu
   assert.equal(spec.flows.find(({ id }) => id === "search-filter").steps[1].text, "Synodex");
   assert.deepEqual(buildSpec({ ...company, industry: "retail" }).content, PROFILES.retail("Innodata"));
 });
+
+test("Fortitude Financial's website generates its advisory services demo", () => {
+  const spec = buildSpec(parseCompanyInput("https://www.fortitudefinancial.com/"));
+  assert.equal(spec.slug, "fortitudefinancial");
+  assert.equal(spec.company, "Fortitude Financial");
+  assert.equal(spec.industry, "banking");
+  assert.equal(spec.brand.primary, "#0C3C54");
+  assert.deepEqual(spec.content.items.map(({ title }) => title), ["Financial Planning", "Investment Management", "Retirement Strategies", "Legacy Planning"]);
+  assert.equal(spec.flows.find(({ id }) => id === "search-filter").steps[1].text, "Retirement");
+});
