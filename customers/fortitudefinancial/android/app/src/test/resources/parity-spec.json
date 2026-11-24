@@ -1,0 +1,600 @@
+{
+  "schema": 1,
+  "company": "Fortitude Financial",
+  "slug": "fortitudefinancial",
+  "url": "https://www.fortitudefinancial.com/",
+  "industry": "banking",
+  "tagline": "Wealth management and financial planning in Spokane, WA",
+  "createdAt": "2026-11-24T19:45:49.866Z",
+  "brand": {
+    "primary": "#0C3C54",
+    "accent": "#00549E",
+    "highlight": "#B9DEF4",
+    "surface": "#EDF4F7",
+    "onPrimary": "#FFFFFF"
+  },
+  "ios": {
+    "target": "FortitudeFinancialApp",
+    "bundleId": "com.paritystudio.fortitudefinancial",
+    "deploymentTarget": "17.0"
+  },
+  "android": {
+    "module": "app",
+    "packageName": "com.paritystudio.fortitudefinancial",
+    "minSdk": 26,
+    "compileSdk": 34
+  },
+  "icons": {
+    "home": {
+      "ios": "house.fill",
+      "android": "Home"
+    },
+    "calendar": {
+      "ios": "calendar",
+      "android": "DateRange"
+    },
+    "list": {
+      "ios": "list.bullet",
+      "android": "List"
+    },
+    "person": {
+      "ios": "person.crop.circle",
+      "android": "AccountCircle"
+    },
+    "bag": {
+      "ios": "bag.fill",
+      "android": "ShoppingCart"
+    },
+    "star": {
+      "ios": "star.fill",
+      "android": "Star"
+    },
+    "bell": {
+      "ios": "bell.fill",
+      "android": "Notifications"
+    },
+    "check": {
+      "ios": "checkmark.circle.fill",
+      "android": "CheckCircle"
+    },
+    "heart": {
+      "ios": "heart.fill",
+      "android": "Favorite"
+    },
+    "mail": {
+      "ios": "envelope.fill",
+      "android": "Email"
+    },
+    "info": {
+      "ios": "info.circle.fill",
+      "android": "Info"
+    },
+    "place": {
+      "ios": "mappin.circle.fill",
+      "android": "Place"
+    },
+    "lock": {
+      "ios": "lock.fill",
+      "android": "Lock"
+    },
+    "settings": {
+      "ios": "gearshape.fill",
+      "android": "Settings"
+    },
+    "phone": {
+      "ios": "phone.fill",
+      "android": "Phone"
+    },
+    "build": {
+      "ios": "wrench.and.screwdriver.fill",
+      "android": "Build"
+    }
+  },
+  "content": {
+    "tabs": [
+      {
+        "id": "home",
+        "title": "Home",
+        "icon": "home"
+      },
+      {
+        "id": "browse",
+        "title": "Services",
+        "icon": "list"
+      },
+      {
+        "id": "account",
+        "title": "Account",
+        "icon": "person"
+      }
+    ],
+    "greeting": "Welcome to Fortitude Financial",
+    "hero": {
+      "eyebrow": "SPOKANE, WA",
+      "title": "Plan for what matters",
+      "subtitle": "Explore financial planning and wealth management for your goals.",
+      "cta": "Explore services"
+    },
+    "stats": [
+      {
+        "label": "Core services",
+        "value": "4",
+        "icon": "list"
+      },
+      {
+        "label": "Office",
+        "value": "Spokane",
+        "icon": "place"
+      }
+    ],
+    "sectionTitle": "Featured services",
+    "searchPlaceholder": "Search services",
+    "items": [
+      {
+        "title": "Financial Planning",
+        "subtitle": "Plan for your goals",
+        "value": "Planning",
+        "badge": "Goals",
+        "icon": "list"
+      },
+      {
+        "title": "Investment Management",
+        "subtitle": "Align your portfolio",
+        "value": "Investing",
+        "badge": "Portfolio",
+        "icon": "star"
+      },
+      {
+        "title": "Retirement Strategies",
+        "subtitle": "Prepare for retirement income",
+        "value": "Retirement",
+        "badge": "Income",
+        "icon": "calendar"
+      },
+      {
+        "title": "Legacy Planning",
+        "subtitle": "Plan for your family and your estate",
+        "value": "Legacy",
+        "badge": "Estate",
+        "icon": "heart"
+      }
+    ],
+    "detail": {
+      "optionsTitle": "Choose a priority",
+      "options": [
+        "Family",
+        "Retirement",
+        "Legacy"
+      ],
+      "primaryAction": "Save interest",
+      "confirmation": "Interest saved"
+    },
+    "account": {
+      "name": "Demo account",
+      "subtitle": "Fortitude Financial services explorer",
+      "rows": [
+        {
+          "title": "Preferences",
+          "icon": "settings"
+        },
+        {
+          "title": "Privacy",
+          "icon": "lock"
+        },
+        {
+          "title": "Contact Fortitude",
+          "icon": "phone"
+        }
+      ],
+      "toggle": "Planning updates"
+    }
+  },
+  "components": [
+    {
+      "id": "home.topbar",
+      "screen": "home",
+      "kind": "TopBar",
+      "label": "Fortitude Financial"
+    },
+    {
+      "id": "home.hero",
+      "screen": "home",
+      "kind": "HeroBanner",
+      "label": "Plan for what matters"
+    },
+    {
+      "id": "home.hero.cta",
+      "screen": "home",
+      "kind": "PrimaryButton",
+      "label": "Explore services",
+      "role": "interactive"
+    },
+    {
+      "id": "home.stat.0",
+      "screen": "home",
+      "kind": "StatTile",
+      "label": "Core services: 4"
+    },
+    {
+      "id": "home.stat.1",
+      "screen": "home",
+      "kind": "StatTile",
+      "label": "Office: Spokane"
+    },
+    {
+      "id": "home.section",
+      "screen": "home",
+      "kind": "SectionHeader",
+      "label": "Featured services"
+    },
+    {
+      "id": "home.card.0",
+      "screen": "home",
+      "kind": "ItemCard",
+      "label": "Financial Planning",
+      "role": "interactive"
+    },
+    {
+      "id": "home.card.1",
+      "screen": "home",
+      "kind": "ItemCard",
+      "label": "Investment Management",
+      "role": "interactive"
+    },
+    {
+      "id": "tab.home",
+      "screen": "home",
+      "kind": "TabItem",
+      "label": "Home",
+      "role": "interactive"
+    },
+    {
+      "id": "tab.browse",
+      "screen": "home",
+      "kind": "TabItem",
+      "label": "Services",
+      "role": "interactive"
+    },
+    {
+      "id": "tab.account",
+      "screen": "home",
+      "kind": "TabItem",
+      "label": "Account",
+      "role": "interactive"
+    },
+    {
+      "id": "browse.search",
+      "screen": "browse",
+      "kind": "SearchField",
+      "label": "Search services",
+      "role": "input"
+    },
+    {
+      "id": "browse.row.0",
+      "screen": "browse",
+      "kind": "ListRow",
+      "label": "Financial Planning",
+      "role": "interactive"
+    },
+    {
+      "id": "browse.row.1",
+      "screen": "browse",
+      "kind": "ListRow",
+      "label": "Investment Management",
+      "role": "interactive"
+    },
+    {
+      "id": "browse.row.2",
+      "screen": "browse",
+      "kind": "ListRow",
+      "label": "Retirement Strategies",
+      "role": "interactive"
+    },
+    {
+      "id": "browse.row.3",
+      "screen": "browse",
+      "kind": "ListRow",
+      "label": "Legacy Planning",
+      "role": "interactive"
+    },
+    {
+      "id": "detail.header",
+      "screen": "detail",
+      "kind": "DetailHeader",
+      "label": "Financial Planning"
+    },
+    {
+      "id": "detail.value",
+      "screen": "detail",
+      "kind": "ValuePill",
+      "label": "Planning"
+    },
+    {
+      "id": "detail.options",
+      "screen": "detail",
+      "kind": "SectionHeader",
+      "label": "Choose a priority"
+    },
+    {
+      "id": "detail.option.0",
+      "screen": "detail",
+      "kind": "Chip",
+      "label": "Family",
+      "role": "interactive",
+      "value": "selected"
+    },
+    {
+      "id": "detail.option.1",
+      "screen": "detail",
+      "kind": "Chip",
+      "label": "Retirement",
+      "role": "interactive",
+      "value": "unselected"
+    },
+    {
+      "id": "detail.option.2",
+      "screen": "detail",
+      "kind": "Chip",
+      "label": "Legacy",
+      "role": "interactive",
+      "value": "unselected"
+    },
+    {
+      "id": "detail.primary",
+      "screen": "detail",
+      "kind": "PrimaryButton",
+      "label": "Save interest",
+      "role": "interactive"
+    },
+    {
+      "id": "detail.confirmation",
+      "screen": "detail_confirmed",
+      "kind": "ConfirmationBanner",
+      "label": "Interest saved"
+    },
+    {
+      "id": "account.profile",
+      "screen": "account",
+      "kind": "ProfileHeader",
+      "label": "Demo account"
+    },
+    {
+      "id": "account.row.0",
+      "screen": "account",
+      "kind": "SettingsRow",
+      "label": "Preferences",
+      "role": "interactive"
+    },
+    {
+      "id": "account.row.1",
+      "screen": "account",
+      "kind": "SettingsRow",
+      "label": "Privacy",
+      "role": "interactive"
+    },
+    {
+      "id": "account.row.2",
+      "screen": "account",
+      "kind": "SettingsRow",
+      "label": "Contact Fortitude",
+      "role": "interactive"
+    },
+    {
+      "id": "account.toggle",
+      "screen": "account",
+      "kind": "ToggleRow",
+      "label": "Planning updates",
+      "role": "interactive",
+      "value": "off"
+    }
+  ],
+  "screens": [
+    {
+      "id": "home",
+      "name": "Home",
+      "route": []
+    },
+    {
+      "id": "browse",
+      "name": "Services",
+      "route": [
+        {
+          "action": "tap",
+          "target": "tab.browse"
+        }
+      ]
+    },
+    {
+      "id": "detail",
+      "name": "Detail",
+      "route": [
+        {
+          "action": "tap",
+          "target": "tab.browse"
+        },
+        {
+          "action": "tap",
+          "target": "browse.row.0"
+        }
+      ]
+    },
+    {
+      "id": "detail_confirmed",
+      "name": "Confirmation",
+      "route": [
+        {
+          "action": "tap",
+          "target": "tab.browse"
+        },
+        {
+          "action": "tap",
+          "target": "browse.row.0"
+        },
+        {
+          "action": "tap",
+          "target": "detail.primary"
+        }
+      ]
+    },
+    {
+      "id": "account",
+      "name": "Account",
+      "route": [
+        {
+          "action": "tap",
+          "target": "tab.account"
+        }
+      ]
+    }
+  ],
+  "flows": [
+    {
+      "id": "hero-cta",
+      "name": "\"Explore services\" opens Services",
+      "steps": [
+        {
+          "action": "tap",
+          "target": "home.hero.cta"
+        },
+        {
+          "action": "expectExists",
+          "target": "browse.search"
+        }
+      ]
+    },
+    {
+      "id": "open-detail",
+      "name": "Open \"Financial Planning\"",
+      "steps": [
+        {
+          "action": "tap",
+          "target": "tab.browse"
+        },
+        {
+          "action": "tap",
+          "target": "browse.row.0"
+        },
+        {
+          "action": "expectLabel",
+          "target": "detail.header",
+          "value": "Financial Planning"
+        }
+      ]
+    },
+    {
+      "id": "select-option",
+      "name": "Choose \"Retirement\"",
+      "steps": [
+        {
+          "action": "tap",
+          "target": "tab.browse"
+        },
+        {
+          "action": "tap",
+          "target": "browse.row.0"
+        },
+        {
+          "action": "tap",
+          "target": "detail.option.1"
+        },
+        {
+          "action": "expectValue",
+          "target": "detail.option.1",
+          "value": "selected"
+        },
+        {
+          "action": "expectValue",
+          "target": "detail.option.0",
+          "value": "unselected"
+        }
+      ]
+    },
+    {
+      "id": "primary-action",
+      "name": "\"Save interest\" confirms",
+      "steps": [
+        {
+          "action": "tap",
+          "target": "tab.browse"
+        },
+        {
+          "action": "tap",
+          "target": "browse.row.0"
+        },
+        {
+          "action": "tap",
+          "target": "detail.primary"
+        },
+        {
+          "action": "expectLabel",
+          "target": "detail.confirmation",
+          "value": "Interest saved"
+        }
+      ]
+    },
+    {
+      "id": "search-filter",
+      "name": "Search \"Retirement\" filters the list",
+      "steps": [
+        {
+          "action": "tap",
+          "target": "tab.browse"
+        },
+        {
+          "action": "type",
+          "target": "browse.search",
+          "text": "Retirement"
+        },
+        {
+          "action": "expectExists",
+          "target": "browse.row.2"
+        },
+        {
+          "action": "expectMissing",
+          "target": "browse.row.0"
+        }
+      ]
+    },
+    {
+      "id": "toggle",
+      "name": "Turn on \"Planning updates\"",
+      "steps": [
+        {
+          "action": "tap",
+          "target": "tab.account"
+        },
+        {
+          "action": "tap",
+          "target": "account.toggle"
+        },
+        {
+          "action": "expectValue",
+          "target": "account.toggle",
+          "value": "on"
+        }
+      ]
+    },
+    {
+      "id": "tab-nav",
+      "name": "Tab bar navigation",
+      "steps": [
+        {
+          "action": "tap",
+          "target": "tab.account"
+        },
+        {
+          "action": "expectExists",
+          "target": "account.profile"
+        },
+        {
+          "action": "tap",
+          "target": "tab.home"
+        },
+        {
+          "action": "expectExists",
+          "target": "home.hero"
+        }
+      ]
+    }
+  ]
+}

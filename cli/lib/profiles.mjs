@@ -332,6 +332,54 @@ export const PRESETS = {
       },
     },
   },
+  fortitudefinancial: {
+    displayName: "Fortitude Financial",
+    industry: "banking",
+    tagline: "Wealth management and financial planning in Spokane, WA",
+    brand: { primary: "#0C3C54", accent: "#00549E", highlight: "#B9DEF4", surface: "#EDF4F7", onPrimary: "#FFFFFF" },
+    content: {
+      tabs: [
+        { id: "home", title: "Home", icon: "home" },
+        { id: "browse", title: "Services", icon: "list" },
+        { id: "account", title: "Account", icon: "person" },
+      ],
+      greeting: "Welcome to Fortitude Financial",
+      hero: {
+        eyebrow: "SPOKANE, WA",
+        title: "Plan for what matters",
+        subtitle: "Explore financial planning and wealth management for your goals.",
+        cta: "Explore services",
+      },
+      stats: [
+        { label: "Core services", value: "4", icon: "list" },
+        { label: "Office", value: "Spokane", icon: "place" },
+      ],
+      sectionTitle: "Featured services",
+      searchPlaceholder: "Search services",
+      items: [
+        { title: "Financial Planning", subtitle: "Plan for your goals", value: "Planning", badge: "Goals", icon: "list" },
+        { title: "Investment Management", subtitle: "Align your portfolio", value: "Investing", badge: "Portfolio", icon: "star" },
+        { title: "Retirement Strategies", subtitle: "Prepare for retirement income", value: "Retirement", badge: "Income", icon: "calendar" },
+        { title: "Legacy Planning", subtitle: "Plan for your family and your estate", value: "Legacy", badge: "Estate", icon: "heart" },
+      ],
+      detail: {
+        optionsTitle: "Choose a priority",
+        options: ["Family", "Retirement", "Legacy"],
+        primaryAction: "Save interest",
+        confirmation: "Interest saved",
+      },
+      account: {
+        name: "Demo account",
+        subtitle: "Fortitude Financial services explorer",
+        rows: [
+          { title: "Preferences", icon: "settings" },
+          { title: "Privacy", icon: "lock" },
+          { title: "Contact Fortitude", icon: "phone" },
+        ],
+        toggle: "Planning updates",
+      },
+    },
+  },
   gap: {
     displayName: "Gap",
     industry: "retail",

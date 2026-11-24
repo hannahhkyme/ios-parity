@@ -1,0 +1,1796 @@
+{
+  "schema": 1,
+  "company": "Fortitude Financial",
+  "slug": "fortitudefinancial",
+  "url": "https://www.fortitudefinancial.com/",
+  "industry": "banking",
+  "tagline": "Wealth management and financial planning in Spokane, WA",
+  "brand": {
+    "primary": "#0C3C54",
+    "accent": "#00549E",
+    "highlight": "#B9DEF4",
+    "surface": "#EDF4F7",
+    "onPrimary": "#FFFFFF"
+  },
+  "generatedAt": "2026-11-24T19:53:39.949Z",
+  "ios": {
+    "target": "FortitudeFinancialApp",
+    "bundleId": "com.paritystudio.fortitudefinancial",
+    "deploymentTarget": "17.0",
+    "device": {
+      "device": "iPhone 17",
+      "height": 874,
+      "os": "iOS 26.5",
+      "platform": "ios",
+      "runner": "XCUITest",
+      "unit": "pt",
+      "width": 402
+    }
+  },
+  "android": {
+    "module": "app",
+    "packageName": "com.paritystudio.fortitudefinancial",
+    "minSdk": 26,
+    "compileSdk": 34,
+    "device": {
+      "platform": "android",
+      "device": "Robolectric virtual device (402×874 dp, xxhdpi)",
+      "os": "Android 14 (API 34)",
+      "runner": "Robolectric + Compose UI Test",
+      "width": 402,
+      "height": 874,
+      "unit": "dp"
+    }
+  },
+  "summary": {
+    "score": 100,
+    "checks": {
+      "passed": 127,
+      "total": 127
+    },
+    "components": {
+      "total": 29,
+      "pass": 29,
+      "warn": 0,
+      "fail": 0
+    },
+    "flows": {
+      "total": 7,
+      "parity": 7,
+      "ios": 7,
+      "android": 7
+    }
+  },
+  "videos": {
+    "ios": "ios/walkthrough.mp4",
+    "android": "android/walkthrough.mp4"
+  },
+  "artifacts": {
+    "ios": "ios/FortitudeFinancialApp-simulator.zip",
+    "android": "android/FortitudeFinancial-debug.apk"
+  },
+  "screens": [
+    {
+      "id": "home",
+      "name": "Home",
+      "ios": "ios/screens/home.png",
+      "android": "android/screens/home.png"
+    },
+    {
+      "id": "browse",
+      "name": "Services",
+      "ios": "ios/screens/browse.png",
+      "android": "android/screens/browse.png"
+    },
+    {
+      "id": "detail",
+      "name": "Detail",
+      "ios": "ios/screens/detail.png",
+      "android": "android/screens/detail.png"
+    },
+    {
+      "id": "detail_confirmed",
+      "name": "Confirmation",
+      "ios": "ios/screens/detail_confirmed.png",
+      "android": "android/screens/detail_confirmed.png"
+    },
+    {
+      "id": "account",
+      "name": "Account",
+      "ios": "ios/screens/account.png",
+      "android": "android/screens/account.png"
+    }
+  ],
+  "components": [
+    {
+      "id": "home.topbar",
+      "kind": "TopBar",
+      "screen": "home",
+      "label": "Fortitude Financial",
+      "status": "pass",
+      "checks": {
+        "present": {
+          "ios": true,
+          "android": true,
+          "ok": true
+        },
+        "label": {
+          "ios": "Fortitude Financial",
+          "android": "Fortitude Financial",
+          "expected": "Fortitude Financial",
+          "ok": true
+        },
+        "role": {
+          "ios": "static",
+          "android": "static",
+          "expected": "static",
+          "ok": true
+        },
+        "geometry": {
+          "ios": {
+            "w": 402,
+            "h": 56,
+            "unit": "pt"
+          },
+          "android": {
+            "w": 362,
+            "h": 56,
+            "unit": "dp"
+          },
+          "delta": 10,
+          "ok": true
+        }
+      },
+      "images": {
+        "ios": "ios/components/home.topbar.png",
+        "android": "android/components/home.topbar.png"
+      }
+    },
+    {
+      "id": "home.hero",
+      "kind": "HeroBanner",
+      "screen": "home",
+      "label": "Plan for what matters",
+      "status": "pass",
+      "checks": {
+        "present": {
+          "ios": true,
+          "android": true,
+          "ok": true
+        },
+        "label": {
+          "ios": "Plan for what matters",
+          "android": "Plan for what matters",
+          "expected": "Plan for what matters",
+          "ok": true
+        },
+        "role": {
+          "ios": "static",
+          "android": "static",
+          "expected": "static",
+          "ok": true
+        },
+        "geometry": {
+          "ios": {
+            "w": 362,
+            "h": 177,
+            "unit": "pt"
+          },
+          "android": {
+            "w": 326,
+            "h": 139,
+            "unit": "dp"
+          },
+          "delta": 9,
+          "ok": true
+        }
+      },
+      "images": {
+        "ios": "ios/components/home.hero.png",
+        "android": "android/components/home.hero.png"
+      }
+    },
+    {
+      "id": "home.hero.cta",
+      "kind": "PrimaryButton",
+      "screen": "home",
+      "label": "Explore services",
+      "status": "pass",
+      "checks": {
+        "present": {
+          "ios": true,
+          "android": true,
+          "ok": true
+        },
+        "label": {
+          "ios": "Explore services",
+          "android": "Explore services",
+          "expected": "Explore services",
+          "ok": true
+        },
+        "role": {
+          "ios": "interactive",
+          "android": "interactive",
+          "expected": "interactive",
+          "ok": true
+        },
+        "geometry": {
+          "ios": {
+            "w": 154,
+            "h": 40,
+            "unit": "pt"
+          },
+          "android": {
+            "w": 146,
+            "h": 40,
+            "unit": "dp"
+          },
+          "delta": 1.9,
+          "ok": true
+        }
+      },
+      "images": {
+        "ios": "ios/components/home.hero.cta.png",
+        "android": "android/components/home.hero.cta.png"
+      }
+    },
+    {
+      "id": "home.stat.0",
+      "kind": "StatTile",
+      "screen": "home",
+      "label": "Core services: 4",
+      "status": "pass",
+      "checks": {
+        "present": {
+          "ios": true,
+          "android": true,
+          "ok": true
+        },
+        "label": {
+          "ios": "Core services: 4",
+          "android": "Core services: 4",
+          "expected": "Core services: 4",
+          "ok": true
+        },
+        "role": {
+          "ios": "static",
+          "android": "static",
+          "expected": "static",
+          "ok": true
+        },
+        "geometry": {
+          "ios": {
+            "w": 175,
+            "h": 64,
+            "unit": "pt"
+          },
+          "android": {
+            "w": 151,
+            "h": 40,
+            "unit": "dp"
+          },
+          "delta": 6,
+          "ok": true
+        }
+      },
+      "images": {
+        "ios": "ios/components/home.stat.0.png",
+        "android": "android/components/home.stat.0.png"
+      }
+    },
+    {
+      "id": "home.stat.1",
+      "kind": "StatTile",
+      "screen": "home",
+      "label": "Office: Spokane",
+      "status": "pass",
+      "checks": {
+        "present": {
+          "ios": true,
+          "android": true,
+          "ok": true
+        },
+        "label": {
+          "ios": "Office: Spokane",
+          "android": "Office: Spokane",
+          "expected": "Office: Spokane",
+          "ok": true
+        },
+        "role": {
+          "ios": "static",
+          "android": "static",
+          "expected": "static",
+          "ok": true
+        },
+        "geometry": {
+          "ios": {
+            "w": 175,
+            "h": 64,
+            "unit": "pt"
+          },
+          "android": {
+            "w": 151,
+            "h": 40,
+            "unit": "dp"
+          },
+          "delta": 6,
+          "ok": true
+        }
+      },
+      "images": {
+        "ios": "ios/components/home.stat.1.png",
+        "android": "android/components/home.stat.1.png"
+      }
+    },
+    {
+      "id": "home.section",
+      "kind": "SectionHeader",
+      "screen": "home",
+      "label": "Featured services",
+      "status": "pass",
+      "checks": {
+        "present": {
+          "ios": true,
+          "android": true,
+          "ok": true
+        },
+        "label": {
+          "ios": "Featured services",
+          "android": "Featured services",
+          "expected": "Featured services",
+          "ok": true
+        },
+        "role": {
+          "ios": "static",
+          "android": "static",
+          "expected": "static",
+          "ok": true
+        },
+        "geometry": {
+          "ios": {
+            "w": 402,
+            "h": 28,
+            "unit": "pt"
+          },
+          "android": {
+            "w": 362,
+            "h": 20,
+            "unit": "dp"
+          },
+          "delta": 10,
+          "ok": true
+        }
+      },
+      "images": {
+        "ios": "ios/components/home.section.png",
+        "android": "android/components/home.section.png"
+      }
+    },
+    {
+      "id": "home.card.0",
+      "kind": "ItemCard",
+      "screen": "home",
+      "label": "Financial Planning",
+      "status": "pass",
+      "checks": {
+        "present": {
+          "ios": true,
+          "android": true,
+          "ok": true
+        },
+        "label": {
+          "ios": "Financial Planning",
+          "android": "Financial Planning",
+          "expected": "Financial Planning",
+          "ok": true
+        },
+        "role": {
+          "ios": "interactive",
+          "android": "interactive",
+          "expected": "interactive",
+          "ok": true
+        },
+        "geometry": {
+          "ios": {
+            "w": 362,
+            "h": 72,
+            "unit": "pt"
+          },
+          "android": {
+            "w": 362,
+            "h": 72,
+            "unit": "dp"
+          },
+          "delta": 0,
+          "ok": true
+        }
+      },
+      "images": {
+        "ios": "ios/components/home.card.0.png",
+        "android": "android/components/home.card.0.png"
+      }
+    },
+    {
+      "id": "home.card.1",
+      "kind": "ItemCard",
+      "screen": "home",
+      "label": "Investment Management",
+      "status": "pass",
+      "checks": {
+        "present": {
+          "ios": true,
+          "android": true,
+          "ok": true
+        },
+        "label": {
+          "ios": "Investment Management",
+          "android": "Investment Management",
+          "expected": "Investment Management",
+          "ok": true
+        },
+        "role": {
+          "ios": "interactive",
+          "android": "interactive",
+          "expected": "interactive",
+          "ok": true
+        },
+        "geometry": {
+          "ios": {
+            "w": 362,
+            "h": 72,
+            "unit": "pt"
+          },
+          "android": {
+            "w": 362,
+            "h": 72,
+            "unit": "dp"
+          },
+          "delta": 0,
+          "ok": true
+        }
+      },
+      "images": {
+        "ios": "ios/components/home.card.1.png",
+        "android": "android/components/home.card.1.png"
+      }
+    },
+    {
+      "id": "tab.home",
+      "kind": "TabItem",
+      "screen": "home",
+      "label": "Home",
+      "status": "pass",
+      "checks": {
+        "present": {
+          "ios": true,
+          "android": true,
+          "ok": true
+        },
+        "label": {
+          "ios": "Home",
+          "android": "Home",
+          "expected": "Home",
+          "ok": true
+        },
+        "role": {
+          "ios": "interactive",
+          "android": "interactive",
+          "expected": "interactive",
+          "ok": true
+        },
+        "geometry": {
+          "ios": {
+            "w": 129,
+            "h": 56,
+            "unit": "pt"
+          },
+          "android": {
+            "w": 134,
+            "h": 56,
+            "unit": "dp"
+          },
+          "delta": 1.3,
+          "ok": true
+        }
+      },
+      "images": {
+        "ios": "ios/components/tab.home.png",
+        "android": "android/components/tab.home.png"
+      }
+    },
+    {
+      "id": "tab.browse",
+      "kind": "TabItem",
+      "screen": "home",
+      "label": "Services",
+      "status": "pass",
+      "checks": {
+        "present": {
+          "ios": true,
+          "android": true,
+          "ok": true
+        },
+        "label": {
+          "ios": "Services",
+          "android": "Services",
+          "expected": "Services",
+          "ok": true
+        },
+        "role": {
+          "ios": "interactive",
+          "android": "interactive",
+          "expected": "interactive",
+          "ok": true
+        },
+        "geometry": {
+          "ios": {
+            "w": 129,
+            "h": 56,
+            "unit": "pt"
+          },
+          "android": {
+            "w": 134,
+            "h": 56,
+            "unit": "dp"
+          },
+          "delta": 1.3,
+          "ok": true
+        }
+      },
+      "images": {
+        "ios": "ios/components/tab.browse.png",
+        "android": "android/components/tab.browse.png"
+      }
+    },
+    {
+      "id": "tab.account",
+      "kind": "TabItem",
+      "screen": "home",
+      "label": "Account",
+      "status": "pass",
+      "checks": {
+        "present": {
+          "ios": true,
+          "android": true,
+          "ok": true
+        },
+        "label": {
+          "ios": "Account",
+          "android": "Account",
+          "expected": "Account",
+          "ok": true
+        },
+        "role": {
+          "ios": "interactive",
+          "android": "interactive",
+          "expected": "interactive",
+          "ok": true
+        },
+        "geometry": {
+          "ios": {
+            "w": 129,
+            "h": 56,
+            "unit": "pt"
+          },
+          "android": {
+            "w": 134,
+            "h": 56,
+            "unit": "dp"
+          },
+          "delta": 1.3,
+          "ok": true
+        }
+      },
+      "images": {
+        "ios": "ios/components/tab.account.png",
+        "android": "android/components/tab.account.png"
+      }
+    },
+    {
+      "id": "browse.search",
+      "kind": "SearchField",
+      "screen": "browse",
+      "label": "Search services",
+      "status": "pass",
+      "checks": {
+        "present": {
+          "ios": true,
+          "android": true,
+          "ok": true
+        },
+        "label": {
+          "ios": "Search services",
+          "android": "Search services",
+          "expected": "Search services",
+          "ok": true
+        },
+        "role": {
+          "ios": "input",
+          "android": "input",
+          "expected": "input",
+          "ok": true
+        },
+        "geometry": {
+          "ios": {
+            "w": 306,
+            "h": 22,
+            "unit": "pt"
+          },
+          "android": {
+            "w": 308,
+            "h": 18,
+            "unit": "dp"
+          },
+          "delta": 0.6,
+          "ok": true
+        }
+      },
+      "images": {
+        "ios": "ios/components/browse.search.png",
+        "android": "android/components/browse.search.png"
+      }
+    },
+    {
+      "id": "browse.row.0",
+      "kind": "ListRow",
+      "screen": "browse",
+      "label": "Financial Planning",
+      "status": "pass",
+      "checks": {
+        "present": {
+          "ios": true,
+          "android": true,
+          "ok": true
+        },
+        "label": {
+          "ios": "Financial Planning",
+          "android": "Financial Planning",
+          "expected": "Financial Planning",
+          "ok": true
+        },
+        "role": {
+          "ios": "interactive",
+          "android": "interactive",
+          "expected": "interactive",
+          "ok": true
+        },
+        "geometry": {
+          "ios": {
+            "w": 362,
+            "h": 64,
+            "unit": "pt"
+          },
+          "android": {
+            "w": 362,
+            "h": 64,
+            "unit": "dp"
+          },
+          "delta": 0,
+          "ok": true
+        }
+      },
+      "images": {
+        "ios": "ios/components/browse.row.0.png",
+        "android": "android/components/browse.row.0.png"
+      }
+    },
+    {
+      "id": "browse.row.1",
+      "kind": "ListRow",
+      "screen": "browse",
+      "label": "Investment Management",
+      "status": "pass",
+      "checks": {
+        "present": {
+          "ios": true,
+          "android": true,
+          "ok": true
+        },
+        "label": {
+          "ios": "Investment Management",
+          "android": "Investment Management",
+          "expected": "Investment Management",
+          "ok": true
+        },
+        "role": {
+          "ios": "interactive",
+          "android": "interactive",
+          "expected": "interactive",
+          "ok": true
+        },
+        "geometry": {
+          "ios": {
+            "w": 362,
+            "h": 64,
+            "unit": "pt"
+          },
+          "android": {
+            "w": 362,
+            "h": 64,
+            "unit": "dp"
+          },
+          "delta": 0,
+          "ok": true
+        }
+      },
+      "images": {
+        "ios": "ios/components/browse.row.1.png",
+        "android": "android/components/browse.row.1.png"
+      }
+    },
+    {
+      "id": "browse.row.2",
+      "kind": "ListRow",
+      "screen": "browse",
+      "label": "Retirement Strategies",
+      "status": "pass",
+      "checks": {
+        "present": {
+          "ios": true,
+          "android": true,
+          "ok": true
+        },
+        "label": {
+          "ios": "Retirement Strategies",
+          "android": "Retirement Strategies",
+          "expected": "Retirement Strategies",
+          "ok": true
+        },
+        "role": {
+          "ios": "interactive",
+          "android": "interactive",
+          "expected": "interactive",
+          "ok": true
+        },
+        "geometry": {
+          "ios": {
+            "w": 362,
+            "h": 64,
+            "unit": "pt"
+          },
+          "android": {
+            "w": 362,
+            "h": 64,
+            "unit": "dp"
+          },
+          "delta": 0,
+          "ok": true
+        }
+      },
+      "images": {
+        "ios": "ios/components/browse.row.2.png",
+        "android": "android/components/browse.row.2.png"
+      }
+    },
+    {
+      "id": "browse.row.3",
+      "kind": "ListRow",
+      "screen": "browse",
+      "label": "Legacy Planning",
+      "status": "pass",
+      "checks": {
+        "present": {
+          "ios": true,
+          "android": true,
+          "ok": true
+        },
+        "label": {
+          "ios": "Legacy Planning",
+          "android": "Legacy Planning",
+          "expected": "Legacy Planning",
+          "ok": true
+        },
+        "role": {
+          "ios": "interactive",
+          "android": "interactive",
+          "expected": "interactive",
+          "ok": true
+        },
+        "geometry": {
+          "ios": {
+            "w": 362,
+            "h": 64,
+            "unit": "pt"
+          },
+          "android": {
+            "w": 362,
+            "h": 64,
+            "unit": "dp"
+          },
+          "delta": 0,
+          "ok": true
+        }
+      },
+      "images": {
+        "ios": "ios/components/browse.row.3.png",
+        "android": "android/components/browse.row.3.png"
+      }
+    },
+    {
+      "id": "detail.header",
+      "kind": "DetailHeader",
+      "screen": "detail",
+      "label": "Financial Planning",
+      "status": "pass",
+      "checks": {
+        "present": {
+          "ios": true,
+          "android": true,
+          "ok": true
+        },
+        "label": {
+          "ios": "Financial Planning",
+          "android": "Financial Planning",
+          "expected": "Financial Planning",
+          "ok": true
+        },
+        "role": {
+          "ios": "static",
+          "android": "static",
+          "expected": "static",
+          "ok": true
+        },
+        "geometry": {
+          "ios": {
+            "w": 402,
+            "h": 169,
+            "unit": "pt"
+          },
+          "android": {
+            "w": 362,
+            "h": 168,
+            "unit": "dp"
+          },
+          "delta": 10,
+          "ok": true
+        }
+      },
+      "images": {
+        "ios": "ios/components/detail.header.png",
+        "android": "android/components/detail.header.png"
+      }
+    },
+    {
+      "id": "detail.value",
+      "kind": "ValuePill",
+      "screen": "detail",
+      "label": "Planning",
+      "status": "pass",
+      "checks": {
+        "present": {
+          "ios": true,
+          "android": true,
+          "ok": true
+        },
+        "label": {
+          "ios": "Planning",
+          "android": "Planning",
+          "expected": "Planning",
+          "ok": true
+        },
+        "role": {
+          "ios": "static",
+          "android": "static",
+          "expected": "static",
+          "ok": true
+        },
+        "geometry": {
+          "ios": {
+            "w": 92,
+            "h": 32,
+            "unit": "pt"
+          },
+          "android": {
+            "w": 59,
+            "h": 32,
+            "unit": "dp"
+          },
+          "delta": 8.1,
+          "ok": true
+        }
+      },
+      "images": {
+        "ios": "ios/components/detail.value.png",
+        "android": "android/components/detail.value.png"
+      }
+    },
+    {
+      "id": "detail.options",
+      "kind": "SectionHeader",
+      "screen": "detail",
+      "label": "Choose a priority",
+      "status": "pass",
+      "checks": {
+        "present": {
+          "ios": true,
+          "android": true,
+          "ok": true
+        },
+        "label": {
+          "ios": "Choose a priority",
+          "android": "Choose a priority",
+          "expected": "Choose a priority",
+          "ok": true
+        },
+        "role": {
+          "ios": "static",
+          "android": "static",
+          "expected": "static",
+          "ok": true
+        },
+        "geometry": {
+          "ios": {
+            "w": 402,
+            "h": 28,
+            "unit": "pt"
+          },
+          "android": {
+            "w": 362,
+            "h": 20,
+            "unit": "dp"
+          },
+          "delta": 10,
+          "ok": true
+        }
+      },
+      "images": {
+        "ios": "ios/components/detail.options.png",
+        "android": "android/components/detail.options.png"
+      }
+    },
+    {
+      "id": "detail.option.0",
+      "kind": "Chip",
+      "screen": "detail",
+      "label": "Family",
+      "status": "pass",
+      "checks": {
+        "present": {
+          "ios": true,
+          "android": true,
+          "ok": true
+        },
+        "label": {
+          "ios": "Family",
+          "android": "Family",
+          "expected": "Family",
+          "ok": true
+        },
+        "role": {
+          "ios": "interactive",
+          "android": "interactive",
+          "expected": "interactive",
+          "ok": true
+        },
+        "geometry": {
+          "ios": {
+            "w": 114,
+            "h": 44,
+            "unit": "pt"
+          },
+          "android": {
+            "w": 114,
+            "h": 44,
+            "unit": "dp"
+          },
+          "delta": 0,
+          "ok": true
+        },
+        "value": {
+          "ios": "selected",
+          "android": "selected",
+          "expected": null,
+          "ok": true
+        }
+      },
+      "images": {
+        "ios": "ios/components/detail.option.0.png",
+        "android": "android/components/detail.option.0.png"
+      }
+    },
+    {
+      "id": "detail.option.1",
+      "kind": "Chip",
+      "screen": "detail",
+      "label": "Retirement",
+      "status": "pass",
+      "checks": {
+        "present": {
+          "ios": true,
+          "android": true,
+          "ok": true
+        },
+        "label": {
+          "ios": "Retirement",
+          "android": "Retirement",
+          "expected": "Retirement",
+          "ok": true
+        },
+        "role": {
+          "ios": "interactive",
+          "android": "interactive",
+          "expected": "interactive",
+          "ok": true
+        },
+        "geometry": {
+          "ios": {
+            "w": 115,
+            "h": 45,
+            "unit": "pt"
+          },
+          "android": {
+            "w": 114,
+            "h": 44,
+            "unit": "dp"
+          },
+          "delta": 0.2,
+          "ok": true
+        },
+        "value": {
+          "ios": "unselected",
+          "android": "unselected",
+          "expected": null,
+          "ok": true
+        }
+      },
+      "images": {
+        "ios": "ios/components/detail.option.1.png",
+        "android": "android/components/detail.option.1.png"
+      }
+    },
+    {
+      "id": "detail.option.2",
+      "kind": "Chip",
+      "screen": "detail",
+      "label": "Legacy",
+      "status": "pass",
+      "checks": {
+        "present": {
+          "ios": true,
+          "android": true,
+          "ok": true
+        },
+        "label": {
+          "ios": "Legacy",
+          "android": "Legacy",
+          "expected": "Legacy",
+          "ok": true
+        },
+        "role": {
+          "ios": "interactive",
+          "android": "interactive",
+          "expected": "interactive",
+          "ok": true
+        },
+        "geometry": {
+          "ios": {
+            "w": 115,
+            "h": 45,
+            "unit": "pt"
+          },
+          "android": {
+            "w": 114,
+            "h": 44,
+            "unit": "dp"
+          },
+          "delta": 0.2,
+          "ok": true
+        },
+        "value": {
+          "ios": "unselected",
+          "android": "unselected",
+          "expected": null,
+          "ok": true
+        }
+      },
+      "images": {
+        "ios": "ios/components/detail.option.2.png",
+        "android": "android/components/detail.option.2.png"
+      }
+    },
+    {
+      "id": "detail.primary",
+      "kind": "PrimaryButton",
+      "screen": "detail",
+      "label": "Save interest",
+      "status": "pass",
+      "checks": {
+        "present": {
+          "ios": true,
+          "android": true,
+          "ok": true
+        },
+        "label": {
+          "ios": "Save interest",
+          "android": "Save interest",
+          "expected": "Save interest",
+          "ok": true
+        },
+        "role": {
+          "ios": "interactive",
+          "android": "interactive",
+          "expected": "interactive",
+          "ok": true
+        },
+        "geometry": {
+          "ios": {
+            "w": 362,
+            "h": 52,
+            "unit": "pt"
+          },
+          "android": {
+            "w": 362,
+            "h": 52,
+            "unit": "dp"
+          },
+          "delta": 0,
+          "ok": true
+        }
+      },
+      "images": {
+        "ios": "ios/components/detail.primary.png",
+        "android": "android/components/detail.primary.png"
+      }
+    },
+    {
+      "id": "detail.confirmation",
+      "kind": "ConfirmationBanner",
+      "screen": "detail_confirmed",
+      "label": "Interest saved",
+      "status": "pass",
+      "checks": {
+        "present": {
+          "ios": true,
+          "android": true,
+          "ok": true
+        },
+        "label": {
+          "ios": "Interest saved",
+          "android": "Interest saved",
+          "expected": "Interest saved",
+          "ok": true
+        },
+        "role": {
+          "ios": "static",
+          "android": "static",
+          "expected": "static",
+          "ok": true
+        },
+        "geometry": {
+          "ios": {
+            "w": 362,
+            "h": 52,
+            "unit": "pt"
+          },
+          "android": {
+            "w": 330,
+            "h": 52,
+            "unit": "dp"
+          },
+          "delta": 8,
+          "ok": true
+        }
+      },
+      "images": {
+        "ios": "ios/components/detail.confirmation.png",
+        "android": "android/components/detail.confirmation.png"
+      }
+    },
+    {
+      "id": "account.profile",
+      "kind": "ProfileHeader",
+      "screen": "account",
+      "label": "Demo account",
+      "status": "pass",
+      "checks": {
+        "present": {
+          "ios": true,
+          "android": true,
+          "ok": true
+        },
+        "label": {
+          "ios": "Demo account",
+          "android": "Demo account",
+          "expected": "Demo account",
+          "ok": true
+        },
+        "role": {
+          "ios": "static",
+          "android": "static",
+          "expected": "static",
+          "ok": true
+        },
+        "geometry": {
+          "ios": {
+            "w": 362,
+            "h": 96,
+            "unit": "pt"
+          },
+          "android": {
+            "w": 330,
+            "h": 64,
+            "unit": "dp"
+          },
+          "delta": 8,
+          "ok": true
+        }
+      },
+      "images": {
+        "ios": "ios/components/account.profile.png",
+        "android": "android/components/account.profile.png"
+      }
+    },
+    {
+      "id": "account.row.0",
+      "kind": "SettingsRow",
+      "screen": "account",
+      "label": "Preferences",
+      "status": "pass",
+      "checks": {
+        "present": {
+          "ios": true,
+          "android": true,
+          "ok": true
+        },
+        "label": {
+          "ios": "Preferences",
+          "android": "Preferences",
+          "expected": "Preferences",
+          "ok": true
+        },
+        "role": {
+          "ios": "interactive",
+          "android": "interactive",
+          "expected": "interactive",
+          "ok": true
+        },
+        "geometry": {
+          "ios": {
+            "w": 362,
+            "h": 52,
+            "unit": "pt"
+          },
+          "android": {
+            "w": 362,
+            "h": 52,
+            "unit": "dp"
+          },
+          "delta": 0,
+          "ok": true
+        }
+      },
+      "images": {
+        "ios": "ios/components/account.row.0.png",
+        "android": "android/components/account.row.0.png"
+      }
+    },
+    {
+      "id": "account.row.1",
+      "kind": "SettingsRow",
+      "screen": "account",
+      "label": "Privacy",
+      "status": "pass",
+      "checks": {
+        "present": {
+          "ios": true,
+          "android": true,
+          "ok": true
+        },
+        "label": {
+          "ios": "Privacy",
+          "android": "Privacy",
+          "expected": "Privacy",
+          "ok": true
+        },
+        "role": {
+          "ios": "interactive",
+          "android": "interactive",
+          "expected": "interactive",
+          "ok": true
+        },
+        "geometry": {
+          "ios": {
+            "w": 362,
+            "h": 52,
+            "unit": "pt"
+          },
+          "android": {
+            "w": 362,
+            "h": 52,
+            "unit": "dp"
+          },
+          "delta": 0,
+          "ok": true
+        }
+      },
+      "images": {
+        "ios": "ios/components/account.row.1.png",
+        "android": "android/components/account.row.1.png"
+      }
+    },
+    {
+      "id": "account.row.2",
+      "kind": "SettingsRow",
+      "screen": "account",
+      "label": "Contact Fortitude",
+      "status": "pass",
+      "checks": {
+        "present": {
+          "ios": true,
+          "android": true,
+          "ok": true
+        },
+        "label": {
+          "ios": "Contact Fortitude",
+          "android": "Contact Fortitude",
+          "expected": "Contact Fortitude",
+          "ok": true
+        },
+        "role": {
+          "ios": "interactive",
+          "android": "interactive",
+          "expected": "interactive",
+          "ok": true
+        },
+        "geometry": {
+          "ios": {
+            "w": 362,
+            "h": 52,
+            "unit": "pt"
+          },
+          "android": {
+            "w": 362,
+            "h": 52,
+            "unit": "dp"
+          },
+          "delta": 0,
+          "ok": true
+        }
+      },
+      "images": {
+        "ios": "ios/components/account.row.2.png",
+        "android": "android/components/account.row.2.png"
+      }
+    },
+    {
+      "id": "account.toggle",
+      "kind": "ToggleRow",
+      "screen": "account",
+      "label": "Planning updates",
+      "status": "pass",
+      "checks": {
+        "present": {
+          "ios": true,
+          "android": true,
+          "ok": true
+        },
+        "label": {
+          "ios": "Planning updates",
+          "android": "Planning updates",
+          "expected": "Planning updates",
+          "ok": true
+        },
+        "role": {
+          "ios": "interactive",
+          "android": "interactive",
+          "expected": "interactive",
+          "ok": true
+        },
+        "geometry": {
+          "ios": {
+            "w": 362,
+            "h": 56,
+            "unit": "pt"
+          },
+          "android": {
+            "w": 362,
+            "h": 56,
+            "unit": "dp"
+          },
+          "delta": 0,
+          "ok": true
+        },
+        "value": {
+          "ios": "off",
+          "android": "off",
+          "expected": null,
+          "ok": true
+        }
+      },
+      "images": {
+        "ios": "ios/components/account.toggle.png",
+        "android": "android/components/account.toggle.png"
+      }
+    }
+  ],
+  "flows": [
+    {
+      "id": "hero-cta",
+      "name": "\"Explore services\" opens Services",
+      "steps": [
+        {
+          "action": "tap",
+          "target": "home.hero.cta",
+          "expected": null,
+          "ios": {
+            "ok": true,
+            "detail": "tapped home.hero.cta"
+          },
+          "android": {
+            "ok": true,
+            "detail": "tapped home.hero.cta"
+          }
+        },
+        {
+          "action": "expectExists",
+          "target": "browse.search",
+          "expected": null,
+          "ios": {
+            "ok": true,
+            "detail": "browse.search shown"
+          },
+          "android": {
+            "ok": true,
+            "detail": "browse.search shown"
+          }
+        }
+      ],
+      "ios": true,
+      "android": true,
+      "status": "pass"
+    },
+    {
+      "id": "open-detail",
+      "name": "Open \"Financial Planning\"",
+      "steps": [
+        {
+          "action": "tap",
+          "target": "tab.browse",
+          "expected": null,
+          "ios": {
+            "ok": true,
+            "detail": "tapped tab.browse"
+          },
+          "android": {
+            "ok": true,
+            "detail": "tapped tab.browse"
+          }
+        },
+        {
+          "action": "tap",
+          "target": "browse.row.0",
+          "expected": null,
+          "ios": {
+            "ok": true,
+            "detail": "tapped browse.row.0"
+          },
+          "android": {
+            "ok": true,
+            "detail": "tapped browse.row.0"
+          }
+        },
+        {
+          "action": "expectLabel",
+          "target": "detail.header",
+          "expected": "Financial Planning",
+          "ios": {
+            "ok": true,
+            "detail": "label \"Financial Planning\" (expected \"Financial Planning\")"
+          },
+          "android": {
+            "ok": true,
+            "detail": "label \"Financial Planning\" (expected \"Financial Planning\")"
+          }
+        }
+      ],
+      "ios": true,
+      "android": true,
+      "status": "pass"
+    },
+    {
+      "id": "select-option",
+      "name": "Choose \"Retirement\"",
+      "steps": [
+        {
+          "action": "tap",
+          "target": "tab.browse",
+          "expected": null,
+          "ios": {
+            "ok": true,
+            "detail": "tapped tab.browse"
+          },
+          "android": {
+            "ok": true,
+            "detail": "tapped tab.browse"
+          }
+        },
+        {
+          "action": "tap",
+          "target": "browse.row.0",
+          "expected": null,
+          "ios": {
+            "ok": true,
+            "detail": "tapped browse.row.0"
+          },
+          "android": {
+            "ok": true,
+            "detail": "tapped browse.row.0"
+          }
+        },
+        {
+          "action": "tap",
+          "target": "detail.option.1",
+          "expected": null,
+          "ios": {
+            "ok": true,
+            "detail": "tapped detail.option.1"
+          },
+          "android": {
+            "ok": true,
+            "detail": "tapped detail.option.1"
+          }
+        },
+        {
+          "action": "expectValue",
+          "target": "detail.option.1",
+          "expected": "selected",
+          "ios": {
+            "ok": true,
+            "detail": "value \"selected\" (expected \"selected\")"
+          },
+          "android": {
+            "ok": true,
+            "detail": "value \"selected\" (expected \"selected\")"
+          }
+        },
+        {
+          "action": "expectValue",
+          "target": "detail.option.0",
+          "expected": "unselected",
+          "ios": {
+            "ok": true,
+            "detail": "value \"unselected\" (expected \"unselected\")"
+          },
+          "android": {
+            "ok": true,
+            "detail": "value \"unselected\" (expected \"unselected\")"
+          }
+        }
+      ],
+      "ios": true,
+      "android": true,
+      "status": "pass"
+    },
+    {
+      "id": "primary-action",
+      "name": "\"Save interest\" confirms",
+      "steps": [
+        {
+          "action": "tap",
+          "target": "tab.browse",
+          "expected": null,
+          "ios": {
+            "ok": true,
+            "detail": "tapped tab.browse"
+          },
+          "android": {
+            "ok": true,
+            "detail": "tapped tab.browse"
+          }
+        },
+        {
+          "action": "tap",
+          "target": "browse.row.0",
+          "expected": null,
+          "ios": {
+            "ok": true,
+            "detail": "tapped browse.row.0"
+          },
+          "android": {
+            "ok": true,
+            "detail": "tapped browse.row.0"
+          }
+        },
+        {
+          "action": "tap",
+          "target": "detail.primary",
+          "expected": null,
+          "ios": {
+            "ok": true,
+            "detail": "tapped detail.primary"
+          },
+          "android": {
+            "ok": true,
+            "detail": "tapped detail.primary"
+          }
+        },
+        {
+          "action": "expectLabel",
+          "target": "detail.confirmation",
+          "expected": "Interest saved",
+          "ios": {
+            "ok": true,
+            "detail": "label \"Interest saved\" (expected \"Interest saved\")"
+          },
+          "android": {
+            "ok": true,
+            "detail": "label \"Interest saved\" (expected \"Interest saved\")"
+          }
+        }
+      ],
+      "ios": true,
+      "android": true,
+      "status": "pass"
+    },
+    {
+      "id": "search-filter",
+      "name": "Search \"Retirement\" filters the list",
+      "steps": [
+        {
+          "action": "tap",
+          "target": "tab.browse",
+          "expected": null,
+          "ios": {
+            "ok": true,
+            "detail": "tapped tab.browse"
+          },
+          "android": {
+            "ok": true,
+            "detail": "tapped tab.browse"
+          }
+        },
+        {
+          "action": "type",
+          "target": "browse.search",
+          "expected": "Retirement",
+          "ios": {
+            "ok": true,
+            "detail": "typed \"Retirement\""
+          },
+          "android": {
+            "ok": true,
+            "detail": "typed \"Retirement\""
+          }
+        },
+        {
+          "action": "expectExists",
+          "target": "browse.row.2",
+          "expected": null,
+          "ios": {
+            "ok": true,
+            "detail": "browse.row.2 shown"
+          },
+          "android": {
+            "ok": true,
+            "detail": "browse.row.2 shown"
+          }
+        },
+        {
+          "action": "expectMissing",
+          "target": "browse.row.0",
+          "expected": null,
+          "ios": {
+            "ok": true,
+            "detail": "browse.row.0 hidden"
+          },
+          "android": {
+            "ok": true,
+            "detail": "browse.row.0 hidden"
+          }
+        }
+      ],
+      "ios": true,
+      "android": true,
+      "status": "pass"
+    },
+    {
+      "id": "toggle",
+      "name": "Turn on \"Planning updates\"",
+      "steps": [
+        {
+          "action": "tap",
+          "target": "tab.account",
+          "expected": null,
+          "ios": {
+            "ok": true,
+            "detail": "tapped tab.account"
+          },
+          "android": {
+            "ok": true,
+            "detail": "tapped tab.account"
+          }
+        },
+        {
+          "action": "tap",
+          "target": "account.toggle",
+          "expected": null,
+          "ios": {
+            "ok": true,
+            "detail": "tapped account.toggle"
+          },
+          "android": {
+            "ok": true,
+            "detail": "tapped account.toggle"
+          }
+        },
+        {
+          "action": "expectValue",
+          "target": "account.toggle",
+          "expected": "on",
+          "ios": {
+            "ok": true,
+            "detail": "value \"on\" (expected \"on\")"
+          },
+          "android": {
+            "ok": true,
+            "detail": "value \"on\" (expected \"on\")"
+          }
+        }
+      ],
+      "ios": true,
+      "android": true,
+      "status": "pass"
+    },
+    {
+      "id": "tab-nav",
+      "name": "Tab bar navigation",
+      "steps": [
+        {
+          "action": "tap",
+          "target": "tab.account",
+          "expected": null,
+          "ios": {
+            "ok": true,
+            "detail": "tapped tab.account"
+          },
+          "android": {
+            "ok": true,
+            "detail": "tapped tab.account"
+          }
+        },
+        {
+          "action": "expectExists",
+          "target": "account.profile",
+          "expected": null,
+          "ios": {
+            "ok": true,
+            "detail": "account.profile shown"
+          },
+          "android": {
+            "ok": true,
+            "detail": "account.profile shown"
+          }
+        },
+        {
+          "action": "tap",
+          "target": "tab.home",
+          "expected": null,
+          "ios": {
+            "ok": true,
+            "detail": "tapped tab.home"
+          },
+          "android": {
+            "ok": true,
+            "detail": "tapped tab.home"
+          }
+        },
+        {
+          "action": "expectExists",
+          "target": "home.hero",
+          "expected": null,
+          "ios": {
+            "ok": true,
+            "detail": "home.hero shown"
+          },
+          "android": {
+            "ok": true,
+            "detail": "home.hero shown"
+          }
+        }
+      ],
+      "ios": true,
+      "android": true,
+      "status": "pass"
+    }
+  ]
+}

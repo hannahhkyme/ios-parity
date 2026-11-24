@@ -1,0 +1,397 @@
+{
+  "device": {
+    "platform": "android",
+    "device": "Robolectric virtual device (402×874 dp, xxhdpi)",
+    "os": "Android 14 (API 34)",
+    "runner": "Robolectric + Compose UI Test",
+    "width": 402,
+    "height": 874,
+    "unit": "dp"
+  },
+  "components": {
+    "home.topbar": {
+      "found": true,
+      "label": "Fortitude Financial",
+      "value": null,
+      "role": "static",
+      "frame": {
+        "x": 20,
+        "y": 0,
+        "w": 362,
+        "h": 56
+      },
+      "image": "components\/home.topbar.png"
+    },
+    "home.hero": {
+      "found": true,
+      "label": "Plan for what matters",
+      "value": null,
+      "role": "static",
+      "frame": {
+        "x": 38,
+        "y": 90,
+        "w": 326,
+        "h": 139.33333
+      },
+      "image": "components\/home.hero.png"
+    },
+    "home.hero.cta": {
+      "found": true,
+      "label": "Explore services",
+      "value": null,
+      "role": "interactive",
+      "frame": {
+        "x": 38,
+        "y": 189.33333,
+        "w": 146,
+        "h": 40
+      },
+      "image": "components\/home.hero.cta.png"
+    },
+    "home.stat.0": {
+      "found": true,
+      "label": "Core services: 4",
+      "value": null,
+      "role": "static",
+      "frame": {
+        "x": 32,
+        "y": 275.33334,
+        "w": 151,
+        "h": 40
+      },
+      "image": "components\/home.stat.0.png"
+    },
+    "home.stat.1": {
+      "found": true,
+      "label": "Office: Spokane",
+      "value": null,
+      "role": "static",
+      "frame": {
+        "x": 219,
+        "y": 275.33334,
+        "w": 151,
+        "h": 40
+      },
+      "image": "components\/home.stat.1.png"
+    },
+    "home.section": {
+      "found": true,
+      "label": "Featured services",
+      "value": null,
+      "role": "static",
+      "frame": {
+        "x": 20,
+        "y": 347.66666,
+        "w": 362,
+        "h": 19.666666
+      },
+      "image": "components\/home.section.png"
+    },
+    "home.card.0": {
+      "found": true,
+      "label": "Financial Planning",
+      "value": null,
+      "role": "interactive",
+      "frame": {
+        "x": 20,
+        "y": 387.33334,
+        "w": 362,
+        "h": 72
+      },
+      "image": "components\/home.card.0.png"
+    },
+    "home.card.1": {
+      "found": true,
+      "label": "Investment Management",
+      "value": null,
+      "role": "interactive",
+      "frame": {
+        "x": 20,
+        "y": 475.33334,
+        "w": 362,
+        "h": 72
+      },
+      "image": "components\/home.card.1.png"
+    },
+    "tab.home": {
+      "found": true,
+      "label": "Home",
+      "value": null,
+      "role": "interactive",
+      "frame": {
+        "x": 0,
+        "y": 818,
+        "w": 134,
+        "h": 56
+      },
+      "image": "components\/tab.home.png"
+    },
+    "tab.browse": {
+      "found": true,
+      "label": "Services",
+      "value": null,
+      "role": "interactive",
+      "frame": {
+        "x": 134,
+        "y": 818,
+        "w": 134,
+        "h": 56
+      },
+      "image": "components\/tab.browse.png"
+    },
+    "tab.account": {
+      "found": true,
+      "label": "Account",
+      "value": null,
+      "role": "interactive",
+      "frame": {
+        "x": 268,
+        "y": 818,
+        "w": 134,
+        "h": 56
+      },
+      "image": "components\/tab.account.png"
+    },
+    "browse.search": {
+      "found": true,
+      "label": "Search services",
+      "value": "",
+      "role": "input",
+      "frame": {
+        "x": 60,
+        "y": 65.333336,
+        "w": 308,
+        "h": 17.666666
+      },
+      "image": "components\/browse.search.png"
+    },
+    "browse.row.0": {
+      "found": true,
+      "label": "Financial Planning",
+      "value": null,
+      "role": "interactive",
+      "frame": {
+        "x": 20,
+        "y": 108,
+        "w": 362,
+        "h": 64
+      },
+      "image": "components\/browse.row.0.png"
+    },
+    "browse.row.1": {
+      "found": true,
+      "label": "Investment Management",
+      "value": null,
+      "role": "interactive",
+      "frame": {
+        "x": 20,
+        "y": 173,
+        "w": 362,
+        "h": 64
+      },
+      "image": "components\/browse.row.1.png"
+    },
+    "browse.row.2": {
+      "found": true,
+      "label": "Retirement Strategies",
+      "value": null,
+      "role": "interactive",
+      "frame": {
+        "x": 20,
+        "y": 238,
+        "w": 362,
+        "h": 64
+      },
+      "image": "components\/browse.row.2.png"
+    },
+    "browse.row.3": {
+      "found": true,
+      "label": "Legacy Planning",
+      "value": null,
+      "role": "interactive",
+      "frame": {
+        "x": 20,
+        "y": 303,
+        "w": 362,
+        "h": 64
+      },
+      "image": "components\/browse.row.3.png"
+    },
+    "detail.header": {
+      "found": true,
+      "label": "Financial Planning",
+      "value": null,
+      "role": "static",
+      "frame": {
+        "x": 20,
+        "y": 44,
+        "w": 362,
+        "h": 168
+      },
+      "image": "components\/detail.header.png"
+    },
+    "detail.value": {
+      "found": true,
+      "label": "Planning",
+      "value": null,
+      "role": "static",
+      "frame": {
+        "x": 34,
+        "y": 230,
+        "w": 59.333332,
+        "h": 32
+      },
+      "image": "components\/detail.value.png"
+    },
+    "detail.options": {
+      "found": true,
+      "label": "Choose a priority",
+      "value": null,
+      "role": "static",
+      "frame": {
+        "x": 20,
+        "y": 284.33334,
+        "w": 362,
+        "h": 19.666666
+      },
+      "image": "components\/detail.options.png"
+    },
+    "detail.option.0": {
+      "found": true,
+      "label": "Family",
+      "value": "selected",
+      "role": "interactive",
+      "frame": {
+        "x": 20,
+        "y": 326,
+        "w": 114,
+        "h": 44
+      },
+      "image": "components\/detail.option.0.png"
+    },
+    "detail.option.1": {
+      "found": true,
+      "label": "Retirement",
+      "value": "unselected",
+      "role": "interactive",
+      "frame": {
+        "x": 144,
+        "y": 326,
+        "w": 114,
+        "h": 44
+      },
+      "image": "components\/detail.option.1.png"
+    },
+    "detail.option.2": {
+      "found": true,
+      "label": "Legacy",
+      "value": "unselected",
+      "role": "interactive",
+      "frame": {
+        "x": 268,
+        "y": 326,
+        "w": 114,
+        "h": 44
+      },
+      "image": "components\/detail.option.2.png"
+    },
+    "detail.primary": {
+      "found": true,
+      "label": "Save interest",
+      "value": null,
+      "role": "interactive",
+      "frame": {
+        "x": 20,
+        "y": 388,
+        "w": 362,
+        "h": 52
+      },
+      "image": "components\/detail.primary.png"
+    },
+    "detail.confirmation": {
+      "found": true,
+      "label": "Interest saved",
+      "value": null,
+      "role": "static",
+      "frame": {
+        "x": 36,
+        "y": 458,
+        "w": 330,
+        "h": 52
+      },
+      "image": "components\/detail.confirmation.png"
+    },
+    "account.profile": {
+      "found": true,
+      "label": "Demo account",
+      "value": null,
+      "role": "static",
+      "frame": {
+        "x": 36,
+        "y": 76,
+        "w": 330,
+        "h": 64
+      },
+      "image": "components\/account.profile.png"
+    },
+    "account.row.0": {
+      "found": true,
+      "label": "Preferences",
+      "value": null,
+      "role": "interactive",
+      "frame": {
+        "x": 20,
+        "y": 172,
+        "w": 362,
+        "h": 52
+      },
+      "image": "components\/account.row.0.png"
+    },
+    "account.row.1": {
+      "found": true,
+      "label": "Privacy",
+      "value": null,
+      "role": "interactive",
+      "frame": {
+        "x": 20,
+        "y": 225,
+        "w": 362,
+        "h": 52
+      },
+      "image": "components\/account.row.1.png"
+    },
+    "account.row.2": {
+      "found": true,
+      "label": "Contact Fortitude",
+      "value": null,
+      "role": "interactive",
+      "frame": {
+        "x": 20,
+        "y": 278,
+        "w": 362,
+        "h": 52
+      },
+      "image": "components\/account.row.2.png"
+    },
+    "account.toggle": {
+      "found": true,
+      "label": "Planning updates",
+      "value": "off",
+      "role": "interactive",
+      "frame": {
+        "x": 20,
+        "y": 346,
+        "w": 362,
+        "h": 56
+      },
+      "image": "components\/account.toggle.png"
+    }
+  },
+  "screens": {
+    "home": "screens\/home.png",
+    "browse": "screens\/browse.png",
+    "detail": "screens\/detail.png",
+    "detail_confirmed": "screens\/detail_confirmed.png",
+    "account": "screens\/account.png"
+  }
+}
