@@ -15,7 +15,7 @@ export function listCustomers() {
 }
 
 // Kept off the home page's Customers list; their pages stay reachable by direct link.
-const HIDDEN_FROM_HOME = new Set(["evinova"]);
+const HIDDEN_FROM_HOME = new Set(["evinova", "innodata"]);
 
 export const listHomeCustomers = () => listCustomers().filter(({ slug }) => !HIDDEN_FROM_HOME.has(slug));
 
